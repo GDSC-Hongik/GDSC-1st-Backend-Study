@@ -42,6 +42,14 @@ GDSC 1기 백엔드 스프링 스터디 레포입니다
 * fork 후 local 환경에 clone 한 후 작업하기
 
 
+### 📤 프로젝트 열기
+* 로컬로 clone 해 온 프로젝트 디렉토리를 IntelliJ에서 열어주세요
+* IntelliJ의 terminal에서 자신의 github 아이디로 된 새로운 branch를 만들어 주세요
+  * ```git checkout -b [본인 github 아이디]```
+* 작업은 해당 branch에서만 진행해주세요 **(~~❌master branch❌~~)**
+  * ```git branch``` : 현재 branch 확인
+
+
 ### 💾 중간 중간 commit 하기
 * 파트 별로 작업을 끝냈거나 더 작은 단위로 작업을 끝낼 때 마다 commit을 해 주는 게 좋아요
 * ❗commit convention ❗️
@@ -81,4 +89,4 @@ GDSC 1기 백엔드 스프링 스터디 레포입니다
 
 ### ⏰ 과제 제출 마감 기한
 
-* 백엔드 스터디가 있는 해당 요일 낮 12시까지 PR을 보내면 됩니다! 😊
+* 백엔드 스터디  있는 해당 요일 낮 12시까지 PR을 보내면 됩니다! 😊
