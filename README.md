@@ -1,5 +1,5 @@
 # GDSC-1st-Backend-Study
-GDSC 1기 백엔드 스프링 스터디 레포입니다
+GDSC 1기 백엔드 스프링 스터디 레포입니다 🙆🏻‍♀️
 
 
 ## 📁 Project Structure
@@ -69,11 +69,25 @@ GDSC 1기 백엔드 스프링 스터디 레포입니다
 
 
 ### 📤 프로젝트 열기
-* 로컬로 clone 해 온 프로젝트 디렉토리를 IntelliJ에서 열어주세요
-* IntelliJ의 terminal에서 자신의 github 아이디로 된 새로운 branch를 만들어 주세요
-  * ```git checkout -b [본인 github 아이디]```
-* 작업은 해당 branch에서만 진행해주세요 **(~~❌master branch❌~~)**
+* 프로젝트를 하나 생성하고 IntelliJ에서 원격 저장소를 연결해줍니다
+* ```git init``` // 원격 저장소 init
+* ```git remote -v https://github.com/GDSC-Hongik/GDSC-1st-Backend-Study.git``` // 원격 저장소 연결
+* ```git pull origin master```
+* IntelliJ의 terminal에서 자신의 branch로 checkout을 해주세요
+  * ```git checkout origin [본인 github 아이디]```
+* 작업은 해당 **본인 branch에서만** 진행해주세요 **(~~❌master branch❌~~)**
   * ```git branch``` : 현재 branch 확인
+
+
+### 🏡 작업공간 생성
+* GDSC-1st-Backend-Study (프로젝트 루트 디렉토리)
+  * 본인 github 아이디명의 디렉토리 (본인 github 아이디로 설정해주세요!)
+    * 해당 강의 디렉토리 (강의 이름으로 설정해주세요!)
+      * 스프링 소스코드 ...
+    * 책 디렉토리 (책 이름으로 설정해주세요!)
+
+
+| 본인 github 아이디명의 디렉토리부터 만들고 시작하시면 됩니다! 😊
 
 
 ### 💾 중간 중간 commit 하기
@@ -108,9 +122,10 @@ GDSC 1기 백엔드 스프링 스터디 레포입니다
 
 * 해당 주차의 강의를 모두 듣고 작업을 모두 끝냈다면, 프로젝트 변경 사항을 remote repository(github repository)에 push 합니다
   * ```git push origin [본인 github 아이디 브랜치 명]``` : git에 등록되어 있는 origin(github repository)에 있는 자신의 branch로 프로젝트의 변경 사항을 반영합니다
-* push를 완료했다면 fork한 자신의 repository에서 pull request를 진행합니다
+* push를 완료했다면 스터디 repository에서 pull request를 진행합니다
+  * 링크: https://github.com/GDSC-Hongik/GDSC-1st-Backend-Study/pulls
 * PR(Pull Request)시 메세지 제목은 다음과 같이 ```[1기_OOO] 1주차 미션 제출합니다.``` 라고 적은 후 ```create pull request``` 버튼을 눌러주세요
-* PR : GDSC-Hongik / ```[본인 github 아이디 브랜치 명]``` <- ```[본인 github 아이디]``` / ```[본인 github 아이디 브랜치 명]```
+* PR : ```base: [master]``` <- ```compare: [본인 github 아이디]```
 
 
 ### ⏰ 과제 제출 마감 기한
