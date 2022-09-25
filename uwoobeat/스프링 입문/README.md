@@ -2,16 +2,12 @@
 
 ## 강의 소개
 
----
-
 - 간단한 스프링 앱을 만드는 것이 목표
 - 스프링 기술보다는 어떻게 사용하는지
 - 오래된, 마이너한, 실무에서 사용 X 다루지 않음
 - 직접 코딩해보기!
 
 ## 프로젝트 생성
-
----
 
 - start.spring.io에서 스프링 프로젝트 생성
 - Maven vs Gradle?
@@ -52,10 +48,8 @@
     - Build and run using과 Run tests를 모두 InteliJ로 변경
     - Gradle 통해서 실행하면 느릴 때가 있음
     - 변경 시 인텔리제이에서 자바 직접 실행
-  
-## 라이브러리 살펴보기
 
----
+## 라이브러리 살펴보기
 
 - build.gradle에는 3개밖에 없지만… external 라이브러리 보면 같이 엮여서 받은 것들이 굉장히 많다. tomcat, junit 등등…
 - gradle이나 maven 같은 것들은 (이걸 빌드 관리 도구라고 한다) 특정 라이브러리와 의존 관계에 있는 다른 라이브러리를 자동으로 관리해준다.
@@ -100,9 +94,9 @@
                         - [https://zbomoon.tistory.com/19](https://zbomoon.tistory.com/19)
                         - [https://velog.io/@jsj3282/10.-로그는-반드시-필요한-내용만-찍자](https://velog.io/@jsj3282/10.-%EB%A1%9C%EA%B7%B8%EB%8A%94-%EB%B0%98%EB%93%9C%EC%8B%9C-%ED%95%84%EC%9A%94%ED%95%9C-%EB%82%B4%EC%9A%A9%EB%A7%8C-%EC%B0%8D%EC%9E%90)
                 - ref. 자바 성능 튜닝 이야기
-
-              > 한 번 요청할 때 5,000명의 사용자 정보를 요청하고, 처리하는 과정에서 응답 시간이 약 20초에 달하는 사이트가 있었다. 원인을 파악해 본 결과 애플리케이션이 5,000명의 정보를 모두 System.out.println()으로 처리하도록 되어 있다. 이 한 줄을 지우자 응답 시간은 6초로 개선되었다.
-              >
+                
+                > 한 번 요청할 때 5,000명의 사용자 정보를 요청하고, 처리하는 과정에서 응답 시간이 약 20초에 달하는 사이트가 있었다. 원인을 파악해 본 결과 애플리케이션이 5,000명의 정보를 모두 System.out.println()으로 처리하도록 되어 있다. 이 한 줄을 지우자 응답 시간은 6초로 개선되었다.
+                > 
                 - java로 알고리즘을 하는 경우에도 CPU 자원을 많이 먹는 등의 이슈로 println 대신 BufferedWriter를 사용한다고 한다.
                     - [https://code0xff.tistory.com/10](https://code0xff.tistory.com/10)
                     - [https://donggov.tistory.com/53](https://donggov.tistory.com/53)
@@ -135,5 +129,3 @@
         - logback, slf4j, log4j
 
 ## View 환경설정
-
----
