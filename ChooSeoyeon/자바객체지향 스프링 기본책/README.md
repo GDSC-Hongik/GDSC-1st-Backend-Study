@@ -6,7 +6,7 @@
 
 2. <a href="https://silent-apparatus-578.notion.site/644077bf3df541a19810fcd2cc6588d9" target="_blank">자바와 절차적/구조적 프로그래밍</a>
 
-3. <a href="https://silent-apparatus-578.notion.site/4f01f38cbaf94194929be134132d6279" target="_blank">자바와 객체 지향</a>
+3. <a href="https://silent-apparatus-578.notion.site/23ced6d7790044bb89ce324474409625" target="_blank">자바와 객체 지향</a>
 
 4. <a href="https://silent-apparatus-578.notion.site/11ccc5be51d94a9fbd04013f1f9f9b0b" target="_blank">자바가 확장한 객체 지향</a>
 
