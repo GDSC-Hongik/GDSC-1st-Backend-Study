@@ -130,6 +130,10 @@ public class MemoryMemberRepository implements MemberRepository {}
 * 설정으로 싱글톤이 아니게 설정할 수 있지만, 특별한 경우를 제외하면 대부분 싱글톤을 사용
 
 
+* DI를 이용해 다른 서비스 클래스 이용하기
+
+![img.png](../image/img8.png)
+
 ## 4. 의존성 주입 최종 정리
 
 한 객체가 어떤 객체(구체 클래스)에 의존할 것인지는 별도의 관심사다.  
