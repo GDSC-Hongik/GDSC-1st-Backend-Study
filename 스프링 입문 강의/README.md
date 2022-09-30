@@ -67,34 +67,53 @@ view-> 화면 관련/ Controller -> 서버 뒷단에 관련된 로직, 내용 / 
 -Alt Enter -> import
 
 ##<회원 리포지토리 테스트 케이스 작성>
+
 Test순서는 보장이 안됨 -> 따라서 순서 상관 없이 매서드 별로 따로 동작하게 설계해야함
+
 따라서 Test가 끝나면 매서드별로 데이터를 clear 해주는 코드 필요
+
 : @AfterEach , public void afterEach(){ repository.clear해주는 함수 }
+
 \*TDD (테스트 주도 개발) : 테스트 먼저 만들고 구역 클래스를 만들어서 돌려보는 것
 
-<회원 서비스 개발>
+##<회원 서비스 개발>
+
 result.ifPresent : 이전에는 if null 이면 으로 했지만 Optional 덕분에 ifPresent 같은 매서드 사용 가능해짐 \*메서드 추출  추출할 부분 드래그 + CTRL + ALT + SHIFT + T
 
-<회원 서비스 테스트>
-*Ctrl + shift + t  create test
-*static import  alt + enter 2번눌러서 선택
-*변수 추출하기 ctrl + alt + v
-*shift + F10  이전에 실행했던 것 다시 실행해줌 ( run 등 ) -테스트는 한글로 적어도 됨 -> build될 때 포함되지 않으므로
+##<회원 서비스 테스트>
+
+\*Ctrl + shift + t  create test
+
+\*static import  alt + enter 2번눌러서 선택
+
+\*변수 추출하기 ctrl + alt + v
+
+\*shift + F10  이전에 실행했던 것 다시 실행해줌 ( run 등 )  
+ -테스트는 한글로 적어도 됨 -> build될 때 포함되지 않으므로
+
 -Illegalstateexception : 메소드를 호출하기 위한 상태가 아닐 때
--try catch문으로 예외를 테스트해볼 수도 있지만 , assertThrows로 더 많이 사용
+
+-try catch문으로 예외를 테스트해볼 수도 있지만 , assertThrows로 더 많이 사용  
 assertThrows(예외상황, 로직)
+
 -Dependency Injection(의존관계주입) : memberservice 직접 new하지 않고 외부에서 넣어주는 것
 
-[스프링 빈과 의존관계]
-<컴포넌트 스캔과 자동 의존관계 설정>
+#[스프링 빈과 의존관계]
+
+##<컴포넌트 스캔과 자동 의존관계 설정>
 
 - @Controller 를 보고 스프링이 뜰 때 객체를 생성해서 들고 있음  “스프링 컨테이너에서 빈이 관리된다.”
+
 - 스프링 컨테이너에 등록해놓고 공용으로 쓰는게 더 좋음
+
   -@Controller , @Service , @Repository : Controller를 통해서 외부 요청 받고, Service에서 비즈니스 로직 만들고, Repository에서 데이터 저장하는 정형화된 패턴
+
 - 스프링 빈 등록 2가지 방법
 
 1.  컴포넌트 스캔 방식 -> 우리가 한 @ 가 컴포넌트 스캔 방식 / autowired : 서로 연결해줌
+
 2.  자바코드로 직접 스프링 빈 등록 -> 그 다음 강의
+
     Q. 아무데나 @Component가 있어도 되는가?  기본은 안됨. 제일 기본 클래스에 있는 패키지를 포함한 하위에서만 가능
 
 - 스프링 컨테이너에 스프링 빈 등록 시 유일하게 하나만 등록
