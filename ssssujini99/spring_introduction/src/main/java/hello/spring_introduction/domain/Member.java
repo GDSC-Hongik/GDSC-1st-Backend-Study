@@ -1,7 +1,14 @@
 package hello.spring_introduction.domain;
 
-public class Member {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class Member { // 이건 이제 JPA가 관리하는 Entity
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
