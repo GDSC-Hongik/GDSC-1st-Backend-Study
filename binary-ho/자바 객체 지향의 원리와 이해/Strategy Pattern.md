@@ -30,7 +30,13 @@ Strategy Pattern은 전략을 쉽게 바꿀 수 있게 해주는 디자인 패�
 public interface MovingStrategy() { void move() }
 public interface AttackStrategy() { void attack() }
 
-// 다른 클래스들
+public Class 파이리Strategy implement MovingStratege {
+  void move() {
+    println("fly");
+  }
+}
+
+...
 ```
 
 ## Reference
