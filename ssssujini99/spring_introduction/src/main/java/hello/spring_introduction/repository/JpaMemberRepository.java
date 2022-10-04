@@ -1,5 +1,6 @@
 package hello.spring_introduction.repository;
 
+
 import hello.spring_introduction.domain.Member;
 
 import javax.persistence.EntityManager;
@@ -23,7 +24,7 @@ public class JpaMemberRepository implements MemberRepository {
     @Override
     public Optional<Member> findById(Long id) {
         Member member = em.find(Member.class, id);
-        return Optional.ofNullable(member);
+        return Optional.ofNullable(member); // 조회할 type, pk
     }
 
     @Override
@@ -31,6 +32,7 @@ public class JpaMemberRepository implements MemberRepository {
         List<Member> result = em.createQuery("select m from Member m where m.name = :name", Member.class)
                 .setParameter("name", name)
                 .getResultList();
+
         return result.stream().findAny();
     }
 
