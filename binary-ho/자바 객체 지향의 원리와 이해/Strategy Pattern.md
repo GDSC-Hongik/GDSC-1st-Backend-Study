@@ -35,7 +35,6 @@ public Class 파이리Strategy implement MovingStratege {
     println("fly");
   }
 }
-
 ...
 ```
 
