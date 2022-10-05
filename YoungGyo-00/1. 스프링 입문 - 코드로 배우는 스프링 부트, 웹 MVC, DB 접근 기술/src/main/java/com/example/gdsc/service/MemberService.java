@@ -3,10 +3,12 @@ package com.example.gdsc.service;
 import com.example.gdsc.domain.Member;
 import com.example.gdsc.repository.MemberRepository;
 import com.example.gdsc.repository.MemoryMemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
