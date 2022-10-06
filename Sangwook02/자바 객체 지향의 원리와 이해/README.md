@@ -185,3 +185,69 @@ package
 ---------
 * namespace를 만들어주는 역할
 * 다른 기능의 동일 이름 클래스를 만드는 경우 그 둘의 구분을 위함이다.
+
+
+5장: 객체 지향 설계 5원칙 - SOLID
+=====
+
+5원칙 - SOLID
+-----------------
+5원칙의 근본은 응집도 높이고 결합도 낮추라는 고전 원칙.
+
+응집도를 높인다 == 각 모듈은 하나의 책임에 집중하여 독립성이 높아짐
+
+결합도를 낮춘다 == 모듈간 의존성을 낮춤
+
+- SRP(Single Responsibility Principle) - 단일 책임 원칙
+- OCP(Open Closed Principle) - 개방 폐쇄 원칙
+- LSP(Liskov Substitution Principle) - 리스코프 치환 원칙
+- ISP(Interface Segregation Principle) - 인터페이스 분리 원칙
+- DIP(Dependency Inversion Principle) - 의존 역전 원칙
+
+SRP(Single Responsibility Principle) - 단일 책임 원칙
+----------------
+하나의 클래스가 역할과 책임에 따라 네 개의 클래스로 쪼개진 것
+
+예를 들어, 남자와 여자처럼 차이점도 있지만 공통점도 많다면 공통점을 사람 클래스에 두고 차이점만 각각 남자 클래스와 여자 클래스에 구현하면 된다.
+
+DB 테이블 설계시의 정규화 작업과 유사함
+
+- 정규화 작업이란, RDBMS의 설계에서 **중복을 최소화하여 데이터를 구조화하는 것**
+
+if문을 남발을 방지할 수 있음.
+
+⇒ 추상화(모델링) 과정에서  단일 책임 원칙을 고려하도록 하자.
+
+OCP(Open Closed Principle) - 개방 폐쇄 원칙
+----------------
+클래스는 자신의 확장에는 OPEN, 주변의 변경에는 CLOSED여야 한다.
+
+이해가 되는 듯, 안 되는 듯하여 아래의 링크 참고함.
+
+[개방-폐쇄 원칙 (OCP: Open-Closed Principle)](https://yoongrammer.tistory.com/97)
+
+OCP의 목적은 기존 클래스를 바꾸기보다, 기능을 확장하는 것을 목표로 함.
+
+LSP(Liskov Substitution Principle) - 리스코프 치환 원칙
+--------------
+클래스의 상속 관계는 계층도나 조직도가 아니라 분류도의 개념으로 이해해야 한다는 말의 원칙화이다.
+
+만약 상위 - 하위 관계를 부모 - 자식 관계로 해석했을 때, 아버지(부모) - 딸(자식)의 관계는 상속이 불가능한 속성들이 생긴다. 
+
+⇒ 부모 - 자식이 아니라, 상위 - 하위 혹은 base - subtype으로 해석하라.
+
+ISP(Interface Segregation Principle) - 인터페이스 분리 원칙
+-----------
+사용하지 않는 method와 연결되면 안 된다.
+
+상위 클래스의 method중에 하위 클래스에서 사용하지 않을 method가 있어서는 안 된다.
+
+Interface를 이용해 분리.
+
+Interface는 작을수록 좋으니 단일 책임 원칙에 따르도록 하자.
+
+DIP(Dependency Inversion Principle) - 의존 역전 원칙
+---------------
+자신보다 변하기 쉬운 것에 의존하기보다 인터페이스나 상위 클래스를 두어 의존성을 줄임.
+
+자동차 클래스가 스노우타이어 클래스를 상속하기 보다는 타이어 인터페이스에 의존하게 하고, 스노우 타이어 클래스도 타이어 인터페이스를 의존하게 함.
