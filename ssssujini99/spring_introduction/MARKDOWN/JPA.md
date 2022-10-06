@@ -175,6 +175,8 @@ public class JpaMemberRepository implements MemberRepository {
 }
 ```
 
+* 왜 JPA를 써야 하는가? https://dbjh.tistory.com/77
+
 
 ### 7. Spring Data JPA
 
