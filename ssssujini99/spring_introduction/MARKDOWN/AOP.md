@@ -81,7 +81,7 @@ memberService = class hello.spring_introduction.service.MemberService$$EnhancerB
 
 * 직접 디버그로 확인해보기
 
-![img_2.png](../image/img21.png)
+![img.png](../image/img21.png)
 
 
 * local에서 회원 목록 조회 시
