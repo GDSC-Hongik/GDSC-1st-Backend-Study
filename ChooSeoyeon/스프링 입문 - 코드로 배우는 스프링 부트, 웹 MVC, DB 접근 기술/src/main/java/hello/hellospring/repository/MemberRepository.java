@@ -1,4 +1,5 @@
 // 3. 회원 관리 예제 - 백엔드 개발 - 2) 회원 도메인과 리포지토리 만들기
+// 회원 리포지토리 인터페이스
 
 package hello.hellospring.repository;
 

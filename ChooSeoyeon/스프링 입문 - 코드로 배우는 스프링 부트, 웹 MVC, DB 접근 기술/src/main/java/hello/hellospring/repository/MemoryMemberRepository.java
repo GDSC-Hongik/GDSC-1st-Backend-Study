@@ -1,17 +1,17 @@
 // 3. 회원 관리 예제 - 백엔드 개발 - 2) 회원 도메인과 리포지토리 만들기
+// 3. 회원 관리 예제 - 백엔드 개발 - 3) 회원 리포지토리 테스트 케이스 작성
+// 회원 리포지토리 구현체
 
 package hello.hellospring.repository;
 
-import hello.hellospring.domain.Member;
-
-import java.util.*;
+import hello.hellospring.domain.Member; // implement결과
+import java.util.*; // implement 결과
 
 public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store= new HashMap<>(); // import(Map, HashMap) 필요. 저장할 곳. member의 id와 member가 key,value꼴로 저장됨.
     private static long sequence= 0L;
 
     // implement methods 선택해서 추가
-
     @Override
     public Member save(Member member) {
         member.setId(++sequence); // store에 넣기 전에 member의 id값 세팅. save하기 전에 member에 name은 미리 넘어온 상태라고 보면 됨.
@@ -34,5 +34,9 @@ public class MemoryMemberRepository implements MemberRepository {
     @Override
     public List<Member> findAll() { // map인데 반환은 List임.
         return new ArrayList<>(store.values()); // store에 있는 value들(member들) 반환.
+    }
+
+    public void clearStore(){ // 3.3 - 테스트 코드 위해 만듬
+        store.clear();
     }
 }
