@@ -2,10 +2,9 @@
 
 package hello.hellospring.repository;
 
-import hello.hellospring.domain.Member;
-
-import java.util.List;
-import java.util.Optional;
+import hello.hellospring.domain.Member; // import(Member)
+import java.util.List; // import(List)
+import java.util.Optional; // import(Optional)
 
 public interface MemberRepository {
     Member save(Member member); // import(Member) 필요. 회원 저장하면 저장된 회원이 반환됨.
