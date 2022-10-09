@@ -1,4 +1,5 @@
 // 3. 회원 관리 예제 - 백엔드 개발 - 4) 회원 서비스 개발
+// 3. 회원 관리 예제 - 백엔드 개발 - 5) 회원 서비스 테스트
 
 package hello.hellospring.service;
 
@@ -10,7 +11,12 @@ import java.util.List; // import List
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository(); // import. 리포지토리 생성
+    // private final MemberRepository memberRepository = new MemoryMemberRepository(); // 변경 전(3.4)
+    private final MemberRepository memberRepository; // import. 리포지토리 생성. 변경 후(3.5)
+
+    public MemberService(MemberRepository memberRepository) { // Alt + Insert로 Constructor(생성자)
+        this.memberRepository = memberRepository; // memberRepository를 직접 생성하는게 아니라 외부에서 넣어줌
+    }
 
     /**
      * 회원 가입

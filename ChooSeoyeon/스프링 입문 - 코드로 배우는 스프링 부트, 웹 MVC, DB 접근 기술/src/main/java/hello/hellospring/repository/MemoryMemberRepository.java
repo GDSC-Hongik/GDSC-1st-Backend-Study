@@ -15,7 +15,9 @@ public class MemoryMemberRepository implements MemberRepository {
     @Override
     public Member save(Member member) {
         member.setId(++sequence); // store에 넣기 전에 member의 id값 세팅. save하기 전에 member에 name은 미리 넘어온 상태라고 보면 됨.
+        //System.out.println(store);
         store.put(member.getId(), member); // store에(map에) 저장함.
+        //System.out.println(store);
         return member; // 스펙에 따라 저장된 결과 반환해줌.
     }
 
