@@ -2,7 +2,7 @@ package hello.spring_core.member;
 
 public class MemberServiceImpl implements MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository = new MemoryMemberRepository(); // DI 위반
 
     @Override
     public void join(Member member) {
