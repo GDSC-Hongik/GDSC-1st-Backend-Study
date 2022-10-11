@@ -306,3 +306,165 @@ DIP(Dependency Inversion Principle) - 의존 역전 원칙
 전략을 익명 내부 클래스로 정의하여 사용함.
 
 - 중복되는 부분을 컨텍스트로 이관
+
+
+7장: 스프링 삼각형과 설정 정보
+======
+IoC/DI
+-------
+IoC - 제어의 역전
+
+DI - 의존성 주입
+
+### 의존 관계란
+
+전체가 부분에 의존하는 것,
+
+예를 들어, Car 객체가 생성될 때 Car의 생성자에서 Tire 객체가 생성된다면 Car 객체는 Tire 객체에 의존하고 있다.
+
+- Driver class
+    
+    ```java
+    public class Driver {
+    	public static void main(String[] args) {
+    		Car car = new car();
+    	}
+    }
+    ```
+    
+- Car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Car() {
+    		tire = new KoreaTire(); //Car class depends on Tire class
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+- Tire class
+    
+    ```java
+    interface Tire {
+    	String getBrand();
+    }
+    
+    public class KoreaTire implements Tire {
+    	public String getBrand() {
+    		return "한국 타이어";
+    	}
+    }
+    ```
+    
+
+생성자를 통한 의존성 주입
+----------------------------
+- 변경된 car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Car(Tire tire) {
+    		this.tire = tire;
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+
+기존의 car class와 달리 인자를 통해 tire의 종류를 입력 받으므로, 코드의 유연성이 좋아진다.
+
+- 재배포와 재컴파일의 필요성이 낮아진다.
+
+속성을 통한 의존성 주입
+---------------------------
+앞선 생성자를 통한 의존성 주입에서는 한 번 결정된 타이어의 종류를 바꿀 수 없었다.
+
+이를 바꾸기 위해서 사용하는 것이 속성을 통한 의존성 주입이다.
+
+car class와  driver class를 다음과 같이 바꿔보자.
+
+- Car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Tire getTire() {
+    		return tire;	
+    	}
+    
+    	public void setTire() {
+    		this.tire = tire;
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+- Driver class
+    
+    ```java
+    public class Driver {
+    	public static void main(String[] args) {
+    		Tire tire = new KoreaTire();
+    		Car car = new Car():
+    		car.setTire(tire);
+    
+    	}
+    }
+    ```
+    
+
+스프링을 통한 의존성 주입 - XML 파일 사용
+-----------------------------------
+XML 파일을 이용하면 재컴파일과 재배포 없이 프로그램을 수정할 수 있다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:annotation-config />
+	
+	<bean id="tire1" class="expert006.KoreaTire"></bean>
+	<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+	<bean id="car" class="expert006.Car">
+		<property name = "tire" ref = "tire1"></property>
+	</bean>
+</beans>
+```
+
+새로운 종류의 tire를 추가하고 싶다면, 새로운 tire의 bean을 추가해주면 된다.
+
+car의 tire를 다른 종류로 바꾸고 싶다면, property의 ref 값을 수정해주기만 하면 된다.
+
+### @Autowired
+
+autowired를 이용하면 property 지정 없이도 tire가 지정된다.
+
+### @Resource
+
+autowired랑 다른 점은 매칭의 우선 순위이다.
+
+autowired가 type을 우선으로 매칭하는 것과 달리 resource는 id를 우선으로 매칭한다.
+
+이 밖에도 autowired는 스프링의 annotation이지만, resource는 자바의 표준이라는 차이가 있다.
