@@ -468,3 +468,108 @@ autowired랑 다른 점은 매칭의 우선 순위이다.
 autowired가 type을 우선으로 매칭하는 것과 달리 resource는 id를 우선으로 매칭한다.
 
 이 밖에도 autowired는 스프링의 annotation이지만, resource는 자바의 표준이라는 차이가 있다.
+
+
+XML
+----
+XML(Extensible Markup Language)이란 데이터를 저장하고 전달할 목적으로 만들어진 마크업 언어이다. 어떤 두 프로그램 간의 데이터 교환이 필요할 때 사용되기도 한다.
+
+우리 책에서는 의존성을 주입을 위해 사용된다.
+
+우리 책에 나오는 XML 파일의 내용이다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:annotation-config />
+
+	<bean id="tire1" class="expert006.KoreaTire"></bean>
+	<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+	<bean id="car" class="expert006.Car">
+		<property name = "tire" ref = "tire1"></property>
+	</bean>
+</beans>
+```
+
+한줄씩 무슨 용도인지 살펴보도록 하자.
+
+## 빈 설정
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+</beans>
+```
+
+### xmlns
+
+xmlns는 namespace를 의미한다.
+
+우리는 bean 태그를 사용하므로 이를 위한 스키마 문서를 불러와야한다.
+
+따라서 xmlns의 값은 "http://www.springframework.org/schema/beans" 가 된다.
+
+크롬창에 해당 URI를 입력해보면 아래와 같은 스키마 문서들이 버전별로 여러개 존재한다.
+
+XSD 파일은 XML 파일의 스키마 정의를 의미한다.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2f67ac0-9f2d-4621-b9ed-df210a91a821/Untitled.png)
+
+## annotation
+
+@Autowired나 @Resource와 같은 annotation을 사용할 경우 빈 설정이 조금 달라진다.
+
+context namespace가 추가된다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd 
+	      http://www.springframework.org/schema/context 
+				http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+</beans>
+```
+
+\<context:annotation-config/\>는 ApplicationContext에 이미 등록된 bean의 annotation을 활성화하는 역할을 한다.
+
+annotation이 활성화되면, 어딘가에 등록된 bean들의 @Autowired와 @Qualifier을 인식한다.
+
+위의 XML에는 없지만 <context : component-scan/>도 비슷한 역할을 한다.
+
+차이점은 bean이 등록되어 있지 않아도 @Controller, @Service, @Component, @Repository annotation이 붙은 클래스들은 모두 bean으로 등록된다.
+
+## xml에 주석 달기
+
+아래와 같은 bean 태그들을 xml 파일에 추가하다보면 각각에 대한 설명이 필요할 수 있다.
+
+```xml
+<bean id="tire1" class="expert006.KoreaTire"></bean>
+<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+<bean id="car" class="expert006.Car">
+	<property name = "tire" ref = "tire1"></property>
+</bean>
+```
+
+주석의 시작은 ‘< ! - -’ 태그, 끝은 ‘- - >’
+```xml
+<!--this is comment-->
+<!--만약 시작 태그와 --- 끝 태그의 사이에 하이픈이 두 개 이상 연속된다면 오류가 발생-->
+<!--하이픈이-시작과-끝-태그-사이에-존재는-하지만-연속되지는-않는다면-정상-작동-->
+```
