@@ -677,3 +677,557 @@ public class Start4 {
     - 상위 클래스의 인스턴스 메서드 호출 가능해짐 ex) super.method()
     - 상위의 상위 클래스의 인스턴스에는 접근 불가능함 ex) super.super.method() // 에러
 
+
+# Ⅴ. 객체 지향 설계 5원칙 - SOLID
+
+- 참고 자료
+
+[[Java] 객체지향 설계 5원칙 - SOLID란 무엇일까?](https://devlog-wjdrbs96.tistory.com/380)
+
+[객체지향 개발 5대 원리: SOLID](https://www.nextree.co.kr/p6960/)
+
+## 1. SRP(단일 책임 원칙)
+
+- 정의: 어떤 클래스를 변경해야 하는 이유는 오직 하나뿐이어야한다.
+
+## 2. OCP(개방 폐쇄 원칙)
+
+- 정의: 소프트웨어 엔티티(클래스, 모듈, 함수 등)는 자신의 확장에 대해서는 열려 있어야 하지만 주변의 변화에 대해서는 닫혀 있어야 한다.
+
+## 3. LSP(리스코프 치환 원칙)
+
+- 정의: 하위 클래스의 인스턴스는 상위형 객체 참조 변수에 대입해 상위 클래스의 인스턴스 역할을 하는 데 문제가 없어야 한다.
+
+## 4. ISP(인터페이스 분리 원칙)
+
+- 정의: 클라이언트는 자신이 사용하지 않는 메서드에 의존 관계를 맺으면 안 된다.
+
+## 5. DIP(의존 역전 원칙)
+
+- 정의
+    - 고차원 모듈은 저차원 모듈에 의존하면 안 된다. 이 두 모듈 모두 다른 추상화된 것에 의존해야 한다.
+    - 추상화된 것은 구체적인 것에 의존하면 안 된다. 구체적인 것이 추상화된 것에 의존해야 한다.
+    - 자주 변경되는 구체 클래스에 의존하지 마라.
+    
+# Ⅵ. 스프링이 사랑한 디자인 패턴
+
+## 1. 어댑터 패턴
+
+- 정의: 호출당하는 쪽의 메서드를 호출하는 쪽의 코드에 대응하도록 중간에 변환기를 통해 호출하는 패턴
+    - 즉, 객체를 속성으로 만들어서 참조하는 패턴
+
+## 2. 프록시 패턴
+
+- 정의: 제어 흐름을 조정하기 위한 목적으로 중간에 대리자를 두는 패턴
+- 특징
+    - 대리자는 실제 서비스와 같은 이름의 메서드를 구현함. 이때 인터페이스를 사용함.
+    - 대리자는 실제 서비스에 대한 참조 변수를 가짐(합성).
+    - 대리자는 실제 서비스의 같은 이름을 가진 메서드를 호출하고 그 값을 클라에게 돌려줌.
+    - 대리자는 실제 서비스의 메서드 호출 전후에 별도의 로직을 수행할 수 있음.
+
+## 3. 데코레이션 패턴
+
+- 정의: 메서드 호출의 반환값에 변화를 주기 위해 중간에 장식자를 두는 패턴
+- 특징
+    - 장식자는 실제 서비스와 같은 이름의 메서드를 구현함. 이때 인터페이스를 사용함.
+    - 장식자는 실제 서비스에 대한 참조 변수를 가짐(합성).
+    - 장식자는 실제 서비스의 같은 이름을 가진 메서드를 호출하고, 그 반환값에 장식을 더해 클라에게 돌려줌.
+    - 장식자는 실제 서비스이 메서드 호출 전후에 별도의 로직을 수행할 수 있음.
+
+## 4. 싱글턴 패턴
+
+- 정의: 클래스의 인스턴스, 즉 객체를 하나만 만들어 사용하는 패턴
+- 특징
+    - private 생성자를 가짐.
+    - 단일 객체 참조 변수를 정적 속성으로 가짐.
+    - 단일 객체 참조 변수가 참조하는 단일 객체를 반환하는 getInstance() 정적 메서드를 가짐.
+    - 단일 객체는 쓰기 가능한 속성을 갖지 않는 것이 정석임.
+- 필수 요소
+    - new를 실행할 수 없도록 생성자에 private 접근 제어자를 지정함.
+    - 유일한 단일 객체를 반환할 수 있는 정적 메서드가 필요함.
+    - 유일한 단일 객체를 참조할 정적 참조 변수가 필요함.
+    
+
+## 5. 템플릿 메서드 패턴
+
+- 정의: 상위 클래스의 견본 메서드에서 하위 클래스가 오버라이딩한 메서드를 호출하는 패턴
+- 구성 요소
+    - 템플릿 메서드
+        - 공통 로직을 수행, 로직 중에 하위 클래스에서 오버라이딩한 추상 메서드/훅 메서드를 호출
+    - 템플릿 메서드에서 호출하는 추상 메서드
+        - 하위 클래스가 반드시 오버라이딩해야 함.
+    - 템플릿 메서드에서 호출하는 훅 메서드
+        - 하위 클래스가 선택적으로 오버라이딩함.
+
+## 6. 팩터리 메서드 패턴
+
+- 정의: 오버라이드된 메서드가 객체를 반환하는 패턴
+
+## 7. 전략 패턴
+
+- 정의: 클라이언트가 전략을 생성해 전략을 실행할 컨텍스트에 주입하는 패턴
+- 구성 요소
+    - 전략 메서드를 가진 전략 개체
+    - 전략 객체를 사용하는 컨텍스트(전략 객체의 사용자/소비자)
+    - 전략 객체를 생성해 컨텍스트에 주입하는 클라이언트(제3자, 전략 객체의 공급자)
+    
+
+## 8. 템플릿 콜백 패턴
+
+- 정의: 전략을 익명 내부 클래스로 구현한 전략 패턴
+    - 전략 패턴의 변형. DI에서 사용하는 특별한 형태의 전략 패턴
+- 특징
+    - 전략 패턴과 동일한데, 전략을 익명 내부 클래스로 정의해서 사용함.
+
+## 9. 스프링이 사랑한 다른 패턴들
+
+- 프론트 컨트롤러 패턴: 스프링 MVC에서 활용
+- MVC 패턴: 스프링 MVC에서 활용
+
+
+# Ⅶ. 스프링 삼각형과 설정 정보
+
+## 1. IoC/DI - 제어의 역전/의존성 주입
+
+### 1) 프로그래밍에서 의존성이란?
+
+- 의사 코드로 살펴보는 의존성
+    
+    <aside>
+    🚗 운전자가 자동차를 생산한다.
+    자동차는 내부적으로 타이어를 생산한다.
+    
+    </aside>
+    
+    - 의존성 → 자동차(전체)가 타이어(부분)에 의존함
+- 의존성: A클래스가 B클래스의 객체를 생성해 사용하는 것.
+    - A와 B는 의존 관계에 있다.
+    - A는 B에 의존한다.
+- 의존성: 다른 객체를 참조하는 것 ⇒ 객체 참조 변수
+
+### 2) 의존성을 직접 해결
+
+- 의존성 직접 해결 → 자동차 내부에서 타이어를 직접 생산
+- 의사 코드
+    
+    <aside>
+    🚗 운전자가 자동차를 생산해 사용한다.
+    자동차가 내부적으로 타이어를 생산해 사용한다.
+    
+    </aside>
+    
+- 실제 코드 요약
+    - Driver 클래스
+        
+        ```java
+        Car car = new Car(); // 운전자가 자동차를 생산해 사용한다.
+        ```
+        
+    - Car 클래스
+        
+        ```java
+        Tire tire = new KoreaTire(); // 자동차가 내부적으로 타이어를 생산해 사용한다.
+        ```
+        
+- 실제 코드
+    - Tire.java
+        
+        ```java
+        interface Tire {
+        	String getBrand();
+        }
+        ```
+        
+    - KoreaTire.java
+        
+        ```java
+        public class KoreaTire implements Tire {
+        	public String getBrand() {
+        		retrn "한국 타이어";
+        	}
+        }
+        ```
+        
+    - AmericaTire.java
+        
+        ```java
+        public class AmericaTire implements Tire {
+        	public String getBrand() {
+        		retrn "미국 타이어";
+        	}
+        }
+        ```
+        
+    - [Car.java](http://Car.java) → Tire를 생산하고 사용함: Car는 Tire에 의존함
+        
+        ```java
+        public class Car {
+        	Tire tire;
+        	public Car() { // 생성자
+        		tire = new KoreaTire(); // Tire를 생산함 (의존성)
+        	}
+        	public String getTireBrand() { 
+        		return "장착된 타이어: " + tire.getBrand(); // Tire를 사용함
+        	}
+        }
+        ```
+        
+    - [Driver.java](http://Driver.java) → Car를 생산하고 사용함: Driver는 Car에 의존함
+        
+        ```java
+        public class Driver {
+        	public static void main(String[] args) {
+        		Car car = new Car();
+        		System.out.println(car.getTireBrand());
+        	}
+        }
+        ```
+        
+    - [CarTest.java](http://CarTest.java) → Driver.java와 같은 역할
+        
+        ```java
+        import static org.junit.Assert.*;
+        import org.junit.Test;
+        
+        public class CarTest {
+        	@Test
+        	pulic void 자동차가_장착한_타이어브랜드_테스트() {
+        		Car car = new Car();
+        		assertEquals("장착된 타이어: 한국 타이어", car.getTireBrand());
+        }
+        ```
+        
+- 문제점 & 해결책
+    - 문제점
+        - 특정 자동차가 생산될 때 `“어떤 타이어를 생산해서 장착할까”`를 자동차 스스로가 결정함.
+        - 운전자는`“어떤 자동차를 생산할지”`만 결정 할 수 있고, 선택한 자동차에 `“어떤 타이어를 장착할지”` 는 결정할 수 없음(유연성 ↓)
+    - 해결책
+        - `“어떤 타이어 장착할지”`는 자동차가 아니라 운전자가 결정해야 함.
+        - 운전자가 타이어를 생산함. 자동차는 운전자가 생산한 타이어를 건네받아 장착만 함.
+        - 즉, 의존성을 내부에서 직접 해결하는 게 아니라, 외부에서 주입 받아 해결해야 함.
+        
+
+### 3) 스프링 없이 의존성 주입 1 - 생성자를 통한 의존성 주입 (생성자의 인자 주입으로 의존성을 해결)
+
+- 의존성 주입 → 자동차 외부에서 생산된 타이어를 자동차에 장착
+- 생성자를 통한 의존성 주입 → 생성자의 인자를 통해 타이어 건네 받음.
+- 주입의 장점
+    - Car는 KoreaTire, AmericaTire…등 몰라도 됨. Car는 Tire만 알면 됨.
+    - 따라서 새로운 타이어 브랜드(ChinaTire…) 얼마든지 생겨도, Car는 알 필요도 없기에 코드를 변경할 필요 없음.(확장성 ↑)
+- 의사 코드
+    
+    <aside>
+    🚗 운전자가 타이어를 생산한다.
+    운전자가 자동차를 생산하면서 타이어를 장착한다.
+    
+    </aside>
+    
+    - 자동차는 외부(운전자)에서 생산한 타이어를 장착해 사용한다.
+    - 단, 타이어 장착은 자동차를 생산하는 순간에만 이뤄질 수 있다. 추후 타이어 교체 불가.
+- 실제 코드 요약
+    - Driver 클래스
+        
+        ```java
+        Tire tire = new KoreaTire(); // 운전자가 타이어를 생산한다.
+        Car car = new Car(tire); // 운전자가 자동차를 생산하면서 타이어를 장착한다.
+        ```
+        
+- 실제 코드
+    - [Car.java](http://Car.java) → Tire를 주입 받아 사용함.
+        
+        ```java
+        public class Car {
+        	Tire tire;
+        	public Car(Tire tire) { // 생성자
+        		this.tire = tire; // 외부에서 생성된 tire를 건네받음
+        	}
+        	public String getTireBrand() { 
+        		return "장착된 타이어: " + tire.getBrand(); // Tire를 사용함
+        	}
+        }
+        ```
+        
+    - [Driver.java](http://Driver.java) → Tire를 생산함. Car를 생산하면서 생산해둔 Tire를 주입시킴. Car를 사용함.
+        
+        ```java
+        public class Driver {
+        	public static void main(String[] args) { 
+        		Tire tire = new KoreaTire(); // Tire를 생산함
+        		Car car = new Car(tire); // Car를 생산하면서 Tire 주입시킴.
+        		System.out.println(car.getTireBrand()); // Car를 사용함
+        	}
+        }
+        ```
+        
+- 문제점 & 해결책
+    - 문제점
+        - 자동차를 생산할 때 한 번 타이어를 장착하면 더 이상 타이어를 교체할 방법이 없음
+    - 해결책
+        - 운전자가 원할 때 자동차의 타이어 교체할 수 있어야 함.
+        - 생성자가 아닌 속성을 통한 의존성 주입으로 해결해야 함.
+        - 이를 통해 자동차 생산과 타이어 장착을 한 번에 하지 않고 따로 따로 할 수 있게 분리함.
+        
+
+### 4) 스프링 없이 의존성 주입 2 - 속성을 통한 의존성 주입
+
+- 속성을 통한 의존성 주입 → 속성 접근자 메서드의 인자를 통해 타이어 건네 받음.
+- 의사 코드
+    
+    <aside>
+    🚗 운전자가 타이어를 생산한다.
+    운전자가 자동차를 생산한다.
+    운전자가 자동차에 타이어를 장착한다.
+    
+    </aside>
+    
+- 실제 코드 요약
+    - Driver 클래스
+        
+        ```java
+        Tire tire = new KoreaTire(); // 운전자가 타이어를 생산한다.
+        Car car = new Car(); // 운전자가 자동차를 생산한다.
+        car.setTire(tire); // 운전자가 자동차에 타이어를 장착한다.
+        ```
+        
+- 실제 코드
+    - [Car.java](http://Car.java) → Tire를 주입 받아 사용함.
+        
+        ```java
+        public class Car {
+        	Tire tire; 
+        	
+        	public Tire getTire() {
+        		return tire;
+        	}
+        
+        	public void setTire(Tire tire) { // 외부에서 생성된 tire를 건네받음
+        		this.tire = tire; 
+        	}
+        
+        	public String getTireBrand() { 
+        		return "장착된 타이어: " + tire.getBrand(); // Tire를 사용함
+        	}
+        }
+        ```
+        
+    - [Driver.java](http://Driver.java) → Tire를 생산함. Car를 생산함. Car에 생산해둔 Tire를 주입시킴. Car를 사용함.
+        
+        ```java
+        public class Driver {
+        	public static void main(String[] args) { 
+        		Tire tire = new KoreaTire(); // Tire를 생산함
+        		Car car = new Car(); // Car를 생산함
+        		car.setTire(tire); // Car에 tire 주입시킴
+        		System.out.println(car.getTireBrand()); // Car를 사용함
+        	}
+        }
+        ```
+        
+- 문제점 & 해결책
+    - 문제점
+        - 타이어 종류 바꾸려면 운전자 코드가 바뀌어야 함.
+    - 해결책
+        - 종합쇼핑몰 같은 곳에서 타이어를 구매해오는 형태라면 타이어 바꿀 때 종합쇼핑몰에서 구매하는 타이어의 종류만 바꾸면 되므로 종합쇼핑몰의 코드만 바뀌면 됨.
+        
+
+### 5) 스프링을 통한 의존성 주입 - XML 파일 사용
+
+- XML 파일 사용한  의존성 주입 → 종합 쇼핑몰(스프링 프레임워크)에서 생산된 타이어를 구매해 자동차에 장착
+- 의사 코드
+    
+    <aside>
+    🚗 운전자가 종합 쇼핑몰에서 타이어를 구매한다.
+    운전자가 종합 쇼핑몰에서 자동차를 구매한다.
+    운전자가 자동차에 타이어를 장착한다.
+    
+    </aside>
+    
+- 실제 코드 요약
+    - Driver 클래스
+        
+        ```java
+        Tire tire = context.getBean("tire", Tire.class); // 운전자가 타이어를 쇼핑몰에서 구매한다.
+        Car car = context.getBean("car", Car.class); // 운전자가 자동차를 쇼핑몰에서 구매한다.
+        car.setTire(tire); // 운전자가 자동차에 타이어를 장착한다.
+        ```
+        
+- 실제 코드
+    - [Car.java](http://Car.java) → Tire를 주입 받아 사용함. - 변동 없음
+        
+        ```java
+        public class Car {
+        	Tire tire; 
+        	
+        	public Tire getTire() {
+        		return tire;
+        	}
+        
+        	public void setTire(Tire tire) { // 외부에서 생성된 tire를 건네받음
+        		this.tire = tire; 
+        	}
+        
+        	public String getTireBrand() { 
+        		return "장착된 타이어: " + tire.getBrand(); // Tire를 사용함
+        	}
+        }
+        ```
+        
+    - [Driver.java](http://Driver.java) → 쇼핑몰에서 Tire와 Car를 구매함. Car에 Tire를 주입시킴. Car를 사용함.
+        
+        ```java
+        import org.springframework.context.ApplicationContext;
+        import org.springframework.context.support.ClassPathXmlApplicationContext;
+        
+        public class Driver {
+        	public static void main(String[] args) { 
+        		ApplicationContext context = new ClassPathXmlApplicationContext("expert002/expert002.xml");
+        		// 종합쇼핑몰에 대한 정보
+        		Tire tire = context.getBean("tire", Tire.class); // 종합쇼핑몰에서 Tire를 구매함
+        		Car car = context.getBean("car", Car.class); // 종합쇼핑몰에서 Car를 구매함
+        		car.setTire(tire); // Car에 tire 주입시킴
+        		System.out.println(car.getTireBrand()); // Car를 사용함
+        	}
+        }
+        ```
+        
+    - expert002.xml → Tire와 Car 상품을 쇼핑몰에 등록함
+        
+        ```java
+        ...
+        <bean id="tire" class="expert002.KoreaTire"></bean> // 아이디 속성, 클래스 속성 지정하여
+        <bean id="car" class="expert002.Car"></bean> // 상품들을 등록함
+        ...
+        ```
+        
+- 문제점 & 해결책
+    - 문제점
+        - 운전자는 쇼핑몰에서 car와 tire를 사와서 car에 tire를 장착하는데,
+        - 쇼핑몰에서 파는 tire는 한 종류(KoreaTire)밖에 없음.
+    - 해결책
+        - 쇼핑몰에서 tire를 장착한 car를 팔면 됨. 쇼핑몰 내엔 여러 tire 있으니 americaTire, koreaTire 등 여러 종류 타이어 장착 가능.
+    
+
+### 6) 스프링을 통한 의존성 주입 - 스프링 설정 파일(XML)에서 속성 주입
+
+- XML 파일에서 속성 주입 → 종합 쇼핑몰에서 타이어가 장착되어 판매되는 차를 구매해 사용
+- 의사 코드
+    
+    <aside>
+    🚗 운전자가 종합 쇼핑몰에서 자동차를 구매 요청한다.
+    종합 쇼핑몰은 자동차를 생산한다.
+    종합 쇼핑몰은 타이어를 생산한다.
+    종합 쇼핑몰은 자동차에 타이어를 장착한다.
+    종합 쇼핑몰은 운전자에게 자동차를 전달한다.
+    
+    </aside>
+    
+- 실제 코드 요약
+    - Driver 클래스
+        
+        ```java
+        Car car = context.getBean("car", Car.class); // 운전자가 타이어 장착된 자동차를 쇼핑몰에서 구매한다.
+        ```
+        
+    - XML
+        
+        ```java
+        <bean id="koreaTire" class="expert002.KoreaTire"></bean> 
+        <bean id="americaTire" class="expert002.AmericaTire"></bean>
+        
+        <bean id="car" class="expert002.Car"> 
+        	<property name="tire" ref="koreaTire"></property> 
+        // 기존에 Driver클래스에서 하던 타이어 구매하고 타이어를 자동차에 장착하던 일을 대신함
+        </bean>
+        ```
+        
+- 실제 코드
+    - [Car.java](http://Car.java) → Tire를 주입 받아 사용함. - 변동 없음
+        
+        ```java
+        public class Car {
+        	Tire tire; 
+        	
+        	public Tire getTire() {
+        		return tire;
+        	}
+        
+        	public void setTire(Tire tire) { // 외부에서 생성된 tire를 건네받음
+        		this.tire = tire; 
+        	}
+        
+        	public String getTireBrand() { 
+        		return "장착된 타이어: " + tire.getBrand(); // Tire를 사용함
+        	}
+        }
+        ```
+        
+    - [Driver.java](http://Driver.java) → 쇼핑몰에서 Car를 구매함. Car를 사용함.
+        
+        ```java
+        import org.springframework.context.ApplicationContext;
+        import org.springframework.context.support.ClassPathXmlApplicationContext;
+        
+        public class Driver {
+        	public static void main(String[] args) { 
+        		ApplicationContext context = new ClassPathXmlApplicationContext("expert002/expert002.xml");
+        		// 종합쇼핑몰에 대한 정보
+        		// Tire tire = context.getBean("tire", Tire.class); // 종합쇼핑몰에서 Tire를 구매함
+        		Car car = context.getBean("car", Car.class); // 종합쇼핑몰에서 Car를 구매함
+        		// car.setTire(tire); // Car에 tire 주입시킴
+        		System.out.println(car.getTireBrand()); // Car를 사용함
+        	}
+        }
+        ```
+        
+    - expert002.xml → Tire와 Car 상품을 쇼핑몰에 등록함. Car에 Tire를 주입시킴
+        
+        ```java
+        ...
+        <bean id="koreaTire" class="expert002.KoreaTire"></bean> 
+        <bean id="americaTire" class="expert002.AmericaTire"></bean>
+        
+        <bean id="car" class="expert002.Car">
+        	<property name="tire" ref="koreaTire"></property>
+        </bean>
+        ...
+        ```
+        
+
+### 7) 스프링을 통한 의존성 주입 - @Autowired를 통한 속성 주입
+
+- @Autowired를 통한 속성 주입 →
+- 의사 코드 (이전과 동일)
+    
+    <aside>
+    🚗 운전자가 종합 쇼핑몰에서 자동차를 구매 요청한다.
+    종합 쇼핑몰은 자동차를 생산한다.
+    종합 쇼핑몰은 타이어를 생산한다.
+    종합 쇼핑몰은 자동차에 타이어를 장착한다.
+    종합 쇼핑몰은 운전자에게 자동차를 전달한다.
+    
+    </aside>
+    
+- 실제 코드 요약
+    
+    ```java
+    
+    ```
+    
+- 실제 코드
+
+### 8) 스프링을 통한 의존성 주입 - @Resource를 통한 속성 주입
+
+### 9) 스프링을 통한 의존성 주입 - @Autowired vs. @Resource vs. <property> 태그
+
+- 사례 연구 1. XML 설정 - 한 개의 bin이 id 없이 tire 인터페이스를 구현한 경우
+- 사례 연구 2. XML 설정 - 두 개의 bin이 id 없이 tire 인터페이스를 구현한 경우
+- 사례 연구 3. XML 설정 - 두 개의 bin이 tire 인터페이스를 구현하고 하나가 일치하는 id를 가진 경우
+- 사례 연구 4. XML 설정 - 두 개의 빈이 tire 인터페이스를 구현하고 일치하는 id가 없는 경우
+- 사례 연구 5. XML 설정 - 일치하는 id가 하나 있지만 인터페이스를 구현하지 않은 경우
+- 사례 연구 6. XML 설정 - 두 개의 빈이 tire 인터페이스를 구현하고 속성과 일치하는 id가 없지만 @Resource 어노테이션의 name 속성이 id와 일치하는 경우
+- 사례 연구 7. 사례 연구 6과 같도록 @Autowired를 지정하려면 다음과 같이 설정한다.
+- 사례 연구 8. 실무라면 필자는 다음과 같이 설정하겠다.
+
+## 2. AOP - Aspect? 관점? 핵심 관심사? 횡단 관심사?
+
+## 3. PSA - 일관성 있는 서비스 추상화
