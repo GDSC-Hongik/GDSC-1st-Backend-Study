@@ -1,9 +1,11 @@
 package GDSC.Hongik.hellospring.repository;
 
 import GDSC.Hongik.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
@@ -11,7 +13,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public Member save(Member member) {
-        member.setId(++sequence);
+        member.setId(++sequence); // id를 1씩 증가시킴
         store.put(member.getId(), member);
         return member;
     }
@@ -33,5 +35,9 @@ public class MemoryMemberRepository implements MemberRepository {
     @Override
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
+    }
+
+    public void clearStore() {
+        store.clear(); // 멤버를 담는 레포지토리 해시맵을 클리어한다
     }
 }
