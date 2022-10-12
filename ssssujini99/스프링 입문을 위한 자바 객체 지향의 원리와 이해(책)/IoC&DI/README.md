@@ -100,7 +100,8 @@ public class Driver {
 > * Car 객체가 Tire를 직접 만들어서 주입
 > * 유연성이 떨어짐
 
-* 테스트코드 결과
+* 테스트코드 결과    
+
 ![img.png](img/img.png)
 
 ---
@@ -150,7 +151,8 @@ public class Driver {
 > * 유연성과 확장성 증가
 
 
-* 테스트코드 결과
+* 테스트코드 결과   
+
 ![img_1.png](img/img_1.png)
 
 ---
@@ -205,8 +207,9 @@ public class Driver {
 > * 하지만, 생성자를 통한 의존성 주입이 더 많이 선호됨
 >   * 프로그램에서는 한번 주입된 의존성을 계속 사용하는 경우가 더 일반적이기 때문
 
+ 
+* 테스트코드 결과   
 
-* 테스트코드 결과
 ![img_2.png](img/img_2.png)
 
 ---
@@ -280,7 +283,8 @@ public class Driver {
 >   * XML 파일을 변경하고 프로그램을 실행하면 바로 변경사항이 적용됨
 
 
-* 테스트코드 결과
+* 테스트코드 결과   
+
 ![img_3.png](img/img_3.png)
 
 ---
@@ -343,7 +347,8 @@ public class Driver {
 장착된 타이어: 미국 타이어
 ```
 
-* 테스트코드 결과
+* 테스트코드 결과   
+
 ![img_4.png](img/img_4.png)
 
 ---
@@ -411,5 +416,6 @@ public class Car {
 장착된 타이어: 미국 타이어
 ```
 
-* 테스트코드 결과
+* 테스트코드 결과   
+
 ![img_5.png](img/img_5.png)
