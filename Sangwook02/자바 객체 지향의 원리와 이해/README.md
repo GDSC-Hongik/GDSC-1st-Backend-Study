@@ -512,7 +512,7 @@ XML(Extensible Markup Language)이란 데이터를 저장하고 전달할 목적
 </beans>
 ```
 
-### xmlns
+## xmlns
 
 xmlns는 namespace를 의미한다.
 
