@@ -306,3 +306,270 @@ DIP(Dependency Inversion Principle) - 의존 역전 원칙
 전략을 익명 내부 클래스로 정의하여 사용함.
 
 - 중복되는 부분을 컨텍스트로 이관
+
+
+7장: 스프링 삼각형과 설정 정보
+======
+IoC/DI
+-------
+IoC - 제어의 역전
+
+DI - 의존성 주입
+
+### 의존 관계란
+
+전체가 부분에 의존하는 것,
+
+예를 들어, Car 객체가 생성될 때 Car의 생성자에서 Tire 객체가 생성된다면 Car 객체는 Tire 객체에 의존하고 있다.
+
+- Driver class
+    
+    ```java
+    public class Driver {
+    	public static void main(String[] args) {
+    		Car car = new car();
+    	}
+    }
+    ```
+    
+- Car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Car() {
+    		tire = new KoreaTire(); //Car class depends on Tire class
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+- Tire class
+    
+    ```java
+    interface Tire {
+    	String getBrand();
+    }
+    
+    public class KoreaTire implements Tire {
+    	public String getBrand() {
+    		return "한국 타이어";
+    	}
+    }
+    ```
+    
+
+생성자를 통한 의존성 주입
+----------------------------
+- 변경된 car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Car(Tire tire) {
+    		this.tire = tire;
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+
+기존의 car class와 달리 인자를 통해 tire의 종류를 입력 받으므로, 코드의 유연성이 좋아진다.
+
+- 재배포와 재컴파일의 필요성이 낮아진다.
+
+속성을 통한 의존성 주입
+---------------------------
+앞선 생성자를 통한 의존성 주입에서는 한 번 결정된 타이어의 종류를 바꿀 수 없었다.
+
+이를 바꾸기 위해서 사용하는 것이 속성을 통한 의존성 주입이다.
+
+car class와  driver class를 다음과 같이 바꿔보자.
+
+- Car class
+    
+    ```java
+    public class car {
+    	Tire tire;
+    
+    	public Tire getTire() {
+    		return tire;	
+    	}
+    
+    	public void setTire() {
+    		this.tire = tire;
+    	}
+    
+    	public String getTireBrand() {
+    		return tire.getBrand();
+    	}
+    }
+    ```
+    
+- Driver class
+    
+    ```java
+    public class Driver {
+    	public static void main(String[] args) {
+    		Tire tire = new KoreaTire();
+    		Car car = new Car():
+    		car.setTire(tire);
+    
+    	}
+    }
+    ```
+    
+
+스프링을 통한 의존성 주입 - XML 파일 사용
+-----------------------------------
+XML 파일을 이용하면 재컴파일과 재배포 없이 프로그램을 수정할 수 있다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:annotation-config />
+	
+	<bean id="tire1" class="expert006.KoreaTire"></bean>
+	<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+	<bean id="car" class="expert006.Car">
+		<property name = "tire" ref = "tire1"></property>
+	</bean>
+</beans>
+```
+
+새로운 종류의 tire를 추가하고 싶다면, 새로운 tire의 bean을 추가해주면 된다.
+
+car의 tire를 다른 종류로 바꾸고 싶다면, property의 ref 값을 수정해주기만 하면 된다.
+
+### @Autowired
+
+autowired를 이용하면 property 지정 없이도 tire가 지정된다.
+
+### @Resource
+
+autowired랑 다른 점은 매칭의 우선 순위이다.
+
+autowired가 type을 우선으로 매칭하는 것과 달리 resource는 id를 우선으로 매칭한다.
+
+이 밖에도 autowired는 스프링의 annotation이지만, resource는 자바의 표준이라는 차이가 있다.
+
+
+XML
+----
+XML(Extensible Markup Language)이란 데이터를 저장하고 전달할 목적으로 만들어진 마크업 언어이다. 어떤 두 프로그램 간의 데이터 교환이 필요할 때 사용되기도 한다.
+
+우리 책에서는 의존성을 주입을 위해 사용된다.
+
+우리 책에 나오는 XML 파일의 내용이다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:annotation-config />
+
+	<bean id="tire1" class="expert006.KoreaTire"></bean>
+	<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+	<bean id="car" class="expert006.Car">
+		<property name = "tire" ref = "tire1"></property>
+	</bean>
+</beans>
+```
+
+한줄씩 무슨 용도인지 살펴보도록 하자.
+
+## 빈 설정
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+</beans>
+```
+
+## xmlns
+
+xmlns는 namespace를 의미한다.
+
+우리는 bean 태그를 사용하므로 이를 위한 스키마 문서를 불러와야한다.
+
+따라서 xmlns의 값은 "http://www.springframework.org/schema/beans" 가 된다.
+
+크롬창에 해당 URI를 입력해보면 아래와 같은 스키마 문서들이 버전별로 여러개 존재한다.
+
+XSD 파일은 XML 파일의 스키마 정의를 의미한다.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2f67ac0-9f2d-4621-b9ed-df210a91a821/Untitled.png)
+
+## annotation
+
+@Autowired나 @Resource와 같은 annotation을 사용할 경우 빈 설정이 조금 달라진다.
+
+context namespace가 추가된다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd 
+	      http://www.springframework.org/schema/context 
+				http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+</beans>
+```
+
+\<context:annotation-config/\>는 ApplicationContext에 이미 등록된 bean의 annotation을 활성화하는 역할을 한다.
+
+annotation이 활성화되면, 어딘가에 등록된 bean들의 @Autowired와 @Qualifier을 인식한다.
+
+위의 XML에는 없지만 <context : component-scan/>도 비슷한 역할을 한다.
+
+차이점은 bean이 등록되어 있지 않아도 @Controller, @Service, @Component, @Repository annotation이 붙은 클래스들은 모두 bean으로 등록된다.
+
+## xml에 주석 달기
+
+아래와 같은 bean 태그들을 xml 파일에 추가하다보면 각각에 대한 설명이 필요할 수 있다.
+
+```xml
+<bean id="tire1" class="expert006.KoreaTire"></bean>
+<bean id="tire2" class="expert006.AmericaTire"></bean>
+
+<bean id="car" class="expert006.Car">
+	<property name = "tire" ref = "tire1"></property>
+</bean>
+```
+
+주석의 시작은 ‘< ! - -’ 태그, 끝은 ‘- - >’
+```xml
+<!--this is comment-->
+<!--만약 시작 태그와 --- 끝 태그의 사이에 하이픈이 두 개 이상 연속된다면 오류가 발생-->
+<!--하이픈이-시작과-끝-태그-사이에-존재는-하지만-연속되지는-않는다면-정상-작동-->
+```
