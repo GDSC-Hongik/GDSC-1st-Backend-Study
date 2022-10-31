@@ -1,140 +1,233 @@
-# 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
+# 스프링 핵심 원리 - 기본편
 
 <br/>
 
-## 프로젝트 환경설정
+## 섹션 1. 객체 지향 설계와 스프링
 
-#### - build.gradle 에 있는 설정들의 의미
-
-![Gradle 설정 정보](https://user-images.githubusercontent.com/92728780/192406327-eb5455e2-0f84-44a2-adbf-c8cd3872aba7.JPG)
-
+#### - 스프링의 핵심
 
 ```
-항상 보던 설정들 이였지만, 
+• 스프링은 자바 언어 기반의 프레임워크
 
-어렴풋이 의미를 유추하고만 있을 뿐 정확히 의미하는 바에 대해서는 알고 있지 못했습니다. 
+• 자바 언어의 가장 큰 특징 - 객체 지향 언어
+
+• 스프링은 객체 지향 언어가 가진 강력한 특징을 살려내는 프레임워크
+
+• 스프링은 좋은 객체 지향 애플리케이션을 개발할 수 있게 도와주는 프레임워크
 ```
-[runtimeOnly와 implementation와 testImplementation의 차이](https://giron.tistory.com/101)
 
 <br/>
 
-## 스프링 웹 개발 기초
+#### - 좋은객체 지향 설계의 5가지 원칙(SOLID)
 
-#### - jar 파일 이름 생성 기준
 ```
-서버 배포 시에 jar 파일명을 명시해줘야 하는 상황이 있었습니다.
+OCP 개방-폐쇄 원칙의 문제점
 
-그때 jar 파일명 생성기준 및 변경법을 알지 못하여 애를 먹었던 적이 있었습니다.
+• 구현 객체를 변경하려면 클라이언트 코드를 변경해야 한다.
+
+• 분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없다.
+
+
+OCP를 지키기 위해서는 객체를 생성하고, 연관관계를 맺어주는 별도의 조립, 설정자가 필요하다 
+=> 스프링 컨테이너가 이러한 역할들을 해준다. 한마디로 스프링은 스프링 컨테이너를 사용해서 객체 지향적 설계를 할 수 있게 도와준다.
 ```
-인텔리제이에서 스프링부트 프로젝트를 배포할 때 빌드툴인 Gradle 을 사용해서 jar 파일을 생성하는 방식을 많이 사용한다.
-
-이때 아무런 설정을 하지 않았다면, '프로젝트명-1.0-SNAPSHOT.jar' 형식의 이름으로 jar 파일이 생성된다.
-
-[jar 파일명 생성 기준 및 파일명 변경법](https://scshim.tistory.com/236)
 
 <br/>
 
-## 회원 관리 예제 - 백엔드 개발
-
-#### - Test 실행 순서
-테스트 실행 순서는 보장되지 않는다. 따라서 테스트가 다른 테스트와 연관되도록 작성되서는 안된다.
-```
-ex) 1번 테스트에서 db에 data 설정 후에, 2번 테스트에서 설정한 data 를 기반으로 test 작성 => 잘못된 구조
-```
-위의 예시와 같이 초기 data 설정이 필요한 경우에는 @BeforeEach 등의 Annotation 을 사용하여 설정할 수 있다.
-
-[JUnit5 사용법](https://gmlwjd9405.github.io/2019/11/26/junit5-guide-basic.html)
+## 섹션 2. 스프링 핵심 원리 이해1 - 예제 만들기
 
 <br/>
 
-## 스프링 빈과 의존관계
+## 섹션 3. 스프링 핵심 원리 이해2 - 객체 지향 원리 적용
 
-#### - 의존관계 주입 방법
-1. 필드 주입
 ```java
-public class MemberController{
-    
-    @Autowired private MemberSerivce memberSerivce;
-    
-    ...
-}
-```
-문제점 - 스프링 시작시에 자동으로 memberService 에 di 가 일어나므로,
-
-test 작성시와 같이 memberService 에 들어갈 객체를 바꿔야 하는 경우 문제가 생긴다.
-
-<br/>
-
-2. setter 주입
-```java
-public class MemberController{
-
-    private MemberSerivce memberSerivce;
-
-    @Autowired
-    public void setMemberSerivce(MemberService memberSerivce) {
-        this.memberSerivce = memberSerivce;
+public class AppConfig {
+    public MemberService memberService() {
+        return new MemberServiceImpl(memberRepository());
     }
-    
-    ...
-}
-```
-문제점 - 실행 중간에 수정될 이유가 없는 memberService 가 
-런타임에 setMemberService() 에 의해서 수정될 여지가 생긴다.
 
-<br/>
-
-3. 생성자 주입
-```java
-public class MemberController{
-
-    private MemberSerivce memberSerivce;
-
-    @Autowired
-    public MemberController(MemberService memberService) {
-        this.memberSerivce = memberService;
+    public OrderService orderService() {
+        return new OrderServiceImpl(
+                memberRepository(),
+                discountPolicy());
     }
-    
-    ...
+
+    public MemberRepository memberRepository() {
+        return new MemoryMemberRepository();
+    }
+
+    public DiscountPolicy discountPolicy() {
+        // return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
+    }
 }
 ```
-위 두 개의 문제점이 전부 해결된다.
-
-- 생성자 호출시에 파라미터를 통해 memberService 에 원하는 객체를 넣을 수 있다.
-- 생성시에 memberService 에 값이 들어오므로 런타임에 수정될 여지가 없다.
-
-> 생성자가 한 개만 있을 경우에는 @Autowired 생략가능.
 
 <br/>
 
-#### - 스프링 컨테이너에 bean 등록이 되어야 @Autowired 을 통한 di 가 일어난다.
-
-<br/>
-
-## 스프링 DB 접근 기술
-
-#### - DDL (데이터 정의 언어)
-데이터베이스를 정의하는 언어이며, 데이터를 생성, 수정, 삭제하는 등의 데이터의 전체의 골격을 결정하는 역할을 하는 언어이다.
-
-[DDL, DML, DCL 이란?](https://cbw1030.tistory.com/71)
-
-<br/>
-
-#### - DB 접근 기술의 흐름
+#### - IOC/DI 컨테이너
 
 ```
-1. 순수 JDBC
-- DataSource 를 사용하여 Connection 설정부터 예외 처리, 쿼리 작성까지 많은 작업들을 일일이 설정해줘야한다.
+AppConfig 처럼 객체를 생성하고 관리하면서 의존관계를 연결해 주는 것을 IoC 컨테이너 또는 DI 컨테이너라 한다.
+ 
+의존관계 주입에 초점을 맞추어 최근에는 주로 DI 컨테이너라 한다.
 
-2. 스프링 JdbcTemplate
-- 순수 JDBC 에 있던 Connection 설정이나 예외 처리와 같은 반복 작업들을 내부적으로 처리해준다. 
-하지만 쿼리는 직접 작성해야 한다.
+또는 어샘블러, 오브젝트 팩토리 등으로 불리기도 한다
+```
 
-3. JPA
-- JPA는 기존의 반복 코드는 물론이고, 기본적인 SQL도 JPA가 직접 만들어서 실행해준다. 
-또한 SQL과 데이터 중심의 설계에서 객체 중심의 설계로 패러다임을 전환할 수 있다.
+<br/>
 
-4. 스프링 데이터 JPA
-- 리포지토리에 구현 클래스 없이 인터페이스 만으로 개발을 완료할 수 있다. 
-그리고 반복 개발해온 기본 CRUD 기능도 스프링 데이터 JPA가 모두 제공한다.
+#### - 스프링 컨테이너
+```
+• ApplicationContext 를 '스프링 컨테이너'라 한다.
+
+• 기존에는 개발자가 AppConfig 를 사용해서 직접 객체를 생성하고 DI를 했지만, 이제부터는 스프링 컨테이너를 통해서 사용한다.
+
+• 스프링 컨테이너는 @Configuration 이 붙은 AppConfig 를 설정(구성) 정보로 사용한다. 여기서 @Bean
+이라 적힌 메서드를 모두 호출해서 반환된 객체를 스프링 컨테이너에 등록한다. 이렇게 스프링 컨테이너에
+등록된 객체를 '스프링 빈'이라 한다.
+
+• 스프링 빈은 @Bean 이 붙은 메서드의 명을 스프링 빈의 이름으로 사용한다.
+
+• 이전에는 개발자가 필요한 객체를 AppConfig 를 사용해서 직접 조회했지만, 이제부터는 스프링 컨테이너를 통해서 필요한 스프링 빈(객체)를 찾아야 한다. 
+스프링 빈은 applicationContext.getBean() 메서드를 사용해서 찾을 수 있다.
+
+• 기존에는 개발자가 직접 자바코드로 모든 것을 했다면 이제부터는 스프링 컨테이너에 객체를 스프링 빈으로 등록하고, 스프링 컨테이너에서 스프링 빈을 찾아서 사용하도록 변경되었다
+```
+
+<br/>
+
+## 섹션 4. 스프링 컨테이너와 스프링 빈
+
+#### - BeanFactory 와 ApplicationContext
+```
+BeanFactory 는 주로 빈을 관리하고 검색하는 기능을 제공해주고,
+
+ApplicationContext 는 Beanfactory 의 서브 클래스로써 수 많은 부가기능(국제화, 환경 변수, 이벤트, 리소스 조회 등)을 더 제공해준다.
+```
+
+<br/>
+
+#### - 스프링 빈 설정 메타 정보 - BeanDefinition
+```
+스프링 컨테이너 입장에서는 Bean을 등록하기 위해 빈 설정 메타 정보인 BeandDefinition을 알면 된다.
+
+따라서 annotation, xml 등과 같은 다양한 방법에서 BeanDefinition만 만들어 넘겨준다면, 스프링 컨테이너에 Bean 등록을 할 수 있다 
+```
+
+<br/>
+
+#### - Annotation Bean 등록 vs Xml Bean 등록
+```
+Xml
+- 스프링 컨테이너에 바로 Bean 등록이 된다.
+
+Annotation
+- factoryBean 을 통해서 스프링 컨테이너에 Bean 등록이 된다. 
+
+```
+
+<br/>
+
+## 섹션 5. 싱글톤 컨테이너
+
+#### - 싱글톤 패턴 문제점
+```
+• 싱글톤 패턴을 구현하는 코드 자체가 많이 들어간다.
+
+• 의존관계상 클라이언트가 구체 클래스에 의존한다. DIP를 위반한다.
+
+• 클라이언트가 구체 클래스에 의존해서 OCP 원칙을 위반할 가능성이 높다.
+
+• 테스트하기 어렵다.
+
+• 내부 속성을 변경하거나 초기화 하기 어렵다.
+
+• private 생성자로 자식 클래스를 만들기 어렵다.
+
+• 결론적으로 유연성이 떨어진다.
+
+• 안티패턴으로 불리기도 한다
+```
+> => 스프링 컨테이너는 싱글톤 패턴의 문제점을 전부 해결하면서, 객체 인스턴스를 싱글톤으로 관리하게 해준다.
+
+<br/>
+
+#### - @Configuration
+```
+• @Configuration 설정 시, 바이트코드를 조작하는 CGLIB 기술을 사용해서 싱글톤을 보장한다.
+
+• @Bean 만 사용해도 스프링 빈으로는 등록되지만, 싱글톤을 보장하지 않는다
+```
+
+## 섹션 6. 컴포넌트 스캔
+
+#### - Annotation 의미
+```
+@Controller : 스프링 MVC 컨트롤러로 인식
+
+@Repository : 스프링 데이터 접근 계층으로 인식하고, 데이터 계층의 예외를 스프링 예외로 변환해준다.
+
+@Configuration : 앞서 보았듯이 스프링 설정 정보로 인식하고, 스프링 빈이 싱글톤을 유지하도록 추가
+처리를 한다.
+
+@Service : 사실 @Service 는 특별한 처리를 하지 않는다. 대신 개발자들이 핵심 비즈니스 로직이 여기에
+있겠구나 라고 비즈니스 계층을 인식하는데 도움이 된다
+```
+데이터 계층의 예외를 추상화를 통해 스프링 예외로 변환해 주는 것이, @Repository 설정을 통한 일이 라는 것을 알게 되었다.
+
+<br/>
+
+## 섹션 7. 의존관계 자동 주입
+
+#### - Bean 생성과 의존 관계 설정(스프링 컨테이너 생성 과정)
+```
+스프링에서 Bean 생성과 DI 를 하는 시점은 구분된다.
+
+• 스프링 컨테이너 생성 -> 스프링 Bean 등록 -> 스프링 빈 의존관계 설정
+```
+
+<br/>
+
+#### - Bean 등록 자동, 수동의 올바른 실무 운영 기준
+애플리케이션은 크게 업무 로직과 기술 지원 로직으로 나눌 수 있다.
+```
+• 업무 로직 빈: 웹을 지원하는 컨트롤러, 핵심 비즈니스 로직이 있는 서비스, 데이터 계층의 로직을 처리하는
+리포지토리등이 모두 업무 로직이다. 보통 비즈니스 요구사항을 개발할 때 추가되거나 변경된다.
+
+• 기술 지원 빈: 기술적인 문제나 공통 관심사(AOP)를 처리할 때 주로 사용된다. 데이터베이스 연결이나,
+공통 로그 처리 처럼 업무 로직을 지원하기 위한 하부 기술이나 공통 기술들이다
+```
+
+* 수동 등록
+    * 직접 등록하는 기술 지원 객체
+        * 애플리케이션에 광범위하게 영향을 미치는 기술 지원 객체는 수동 빈으로 등록해서 설정 정보에 바로
+          나타나게 하는 것이 유지보수 하기 좋다
+
+    * 다형성을 적극 활용하는 비즈니스 로직
+
+
+* 자동 등록
+    * 수동 등록이 필요한 상황 이외
+
+<br/>
+
+## 섹션 8. 빈 생명주기 콜백
+
+<br/>
+
+## 섹션 9. 빈 스코프
+
+스코프 종류
+```
+* 싱글톤: 기본 스코프, 스프링 컨테이너의 시작과 종료까지 유지되는 가장 넓은 범위의 스코프이다.
+
+* 프로토타입: 스프링 컨테이너는 프로토타입 빈의 생성과 의존관계 주입까지만 관여하고 더는 관리하지 않는 매우 짧은 범위의 스코프이다.
+
+- 웹 관련 스코프
+* request: 웹 요청이 들어오고 나갈때 까지 유지되는 스코프이다.
+
+* session: 웹 세션이 생성되고 종료될 때 까지 유지되는 스코프이다.
+
+* application: 웹의 서블릿 컨텍스트와 같은 범위로 유지되는 스코프이다
 ```
