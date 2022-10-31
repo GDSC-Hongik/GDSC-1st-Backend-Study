@@ -2,6 +2,7 @@ package hello.spring_core;
 
 import hello.spring_core.discount.DiscountPolicy;
 import hello.spring_core.discount.FixDiscountPolicy;
+import hello.spring_core.discount.RateDiscountPolicy;
 import hello.spring_core.member.MemberRepository;
 import hello.spring_core.member.MemberService;
 import hello.spring_core.member.MemberServiceImpl;
@@ -24,6 +25,6 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy() {
-        return new FixDiscountPolicy(); // DiscountPolicy <-- FixDiscountPolicy
+        return new RateDiscountPolicy(); // DiscountPolicy <-- RateDiscountPolicy
     }
 }
