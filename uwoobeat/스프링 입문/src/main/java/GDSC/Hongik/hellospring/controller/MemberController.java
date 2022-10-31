@@ -1,8 +1,11 @@
 package GDSC.Hongik.hellospring.controller;
 
+import GDSC.Hongik.hellospring.domain.Member;
 import GDSC.Hongik.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 // Controller 어노테이션이 있으면 스프링이 실행될 때
 // 스프링 컨테이너에 해당 어노테이션이 있는 객체를 생성하여 삽입하고, 관리한다.
@@ -16,7 +19,7 @@ public class MemberController {
     // 그렇다고 여러 개 생성할 필요도 없음. 서비스는 하나만 있어야 함.
     // 그래서 이러한 서비스도 등록해서 (하나만 등록된다) 써먹으면 된다.
 
-    private final MemberService memberService; // Alt+Insert로 생성자 제너레이트
+    private MemberService memberService; // Alt+Insert로 생성자 제너레이트
 
     // 컨트롤러 어노테이션 있으면 스프링 실행될 때 자동으로 생성되어 컨테이너에 삽입된다.
     // 이때 생성자가 실행되는데, 생성자에 Autowired(자동 연결) 어노테이션이 있으면 컨테이너의 MemberService와 연결시켜준다.
@@ -24,9 +27,23 @@ public class MemberController {
     // 그래서 @Service 어노테이션을 추가해줘야 함.
     // 그럼 Repository도 있지 않을까? 맞다. 구현체에 추가해주자.
     // 그래서 Controller-Service-Repository 구조가 정형화된 패턴이라는 것을 알 수 있다.
+
+    @Autowired // DI
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
 
-    // 컨트롤러 어노테이션이 있으면
+    @GetMapping("/members/new")
+    public String createForm() {
+        return "members/createMemberForm";
+    }
+
+    @PostMapping("/members/new")
+    public String create(MemberForm form) {
+        Member member = new Member();
+        member.setName(form.getName());
+
+        memberService.join(member);
+        return "redirect:/";
+    }
 }
