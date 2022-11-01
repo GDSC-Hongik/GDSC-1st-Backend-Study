@@ -1,5 +1,6 @@
 // 4.스프링 빈과 의존관계 - 1) 컴포넌트 스캔과 자동 의존관계 설정
 // 5. 회원 관리 예제_웹 MVC 개발 - 2) 회원 웹 기능-등록
+// 5. 회원 관리 예제_웹 MVC 개발 - 3) 회원 웹 기능-조회
 
 package hello.hellospring.controller;
 
@@ -7,8 +8,11 @@ import hello.hellospring.domain.Member; // import Member 5.2
 import hello.hellospring.service.MemberService; // import(MemberService) 4.1
 import org.springframework.beans.factory.annotation.Autowired; // import Autowired 4.1
 import org.springframework.stereotype.Controller; // import(@Contorller) 4.1
+import org.springframework.ui.Model; // import Model 5.3
 import org.springframework.web.bind.annotation.GetMapping; // import GetMapping 5.1
 import org.springframework.web.bind.annotation.PostMapping; // import PostMapping 5.2
+
+import java.util.List;
 
 @Controller // import(@Contorller) 4.1
 public class MemberController {
@@ -35,5 +39,13 @@ public class MemberController {
         // System.out.println("member = " + member.getName());
         memberService.join(member);
         return "redirect:/"; // 회원가입 끝났으니 홈 화면으로 보냄
+    }
+
+    //5.3
+    @GetMapping("/members")
+    public String list(Model model) { // import Model 5.3
+        List<Member> members = memberService.findMembers();
+        model.addAttribute("members", members); // members 리스트 자체를 model에 담아서 화면에 넘길 것임
+        return "members/memberList";
     }
 }
