@@ -1,6 +1,7 @@
 // 3. 회원 관리 예제 - 백엔드 개발 - 4) 회원 서비스 개발
 // 3. 회원 관리 예제 - 백엔드 개발 - 5) 회원 서비스 테스트
 // 4.스프링 빈과 의존관계 - 1) 컴포넌트 스캔과 자동 의존관계 설정
+// 4.스프링 빈과 의존관계 - 2) 자바코드로 직접 스프링 빈 등록
 
 package hello.hellospring.service;
 
@@ -13,12 +14,12 @@ import org.springframework.stereotype.Service; // import 4.1
 import java.util.List; // import List
 import java.util.Optional;
 
-@Service // import 4.1
+//@Service // import 4.1
 public class MemberService {
     // private final MemberRepository memberRepository = new MemoryMemberRepository(); // 변경 전(3.4)
     private final MemberRepository memberRepository; // import. 리포지토리 생성. 변경 후(3.5)
 
-    @Autowired // import 4.1
+    //@Autowired // import 4.1
     public MemberService(MemberRepository memberRepository) { // Alt + Insert로 Constructor(생성자)
         this.memberRepository = memberRepository; // memberRepository를 직접 생성하는게 아니라 외부에서 넣어줌
     }
