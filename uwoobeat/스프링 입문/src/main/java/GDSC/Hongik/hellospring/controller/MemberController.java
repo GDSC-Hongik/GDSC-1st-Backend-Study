@@ -4,8 +4,11 @@ import GDSC.Hongik.hellospring.domain.Member;
 import GDSC.Hongik.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 // Controller 어노테이션이 있으면 스프링이 실행될 때
 // 스프링 컨테이너에 해당 어노테이션이 있는 객체를 생성하여 삽입하고, 관리한다.
@@ -45,5 +48,16 @@ public class MemberController {
 
         memberService.join(member);
         return "redirect:/";
+    }
+
+    @GetMapping("/members")
+    public String list(Model model) {
+        List<Member> members = memberService.findMembers();
+        // member 리스트에 findMembers를 호출한 반환값을 할당한다.
+        // findMembers는 멤버 레포지터리에서 모든 멤버들을 찾아서 반환한다.
+        model.addAttribute("members", members);
+        // key-value 해시맵 형태로 Model 객체에 담아서 뷰로 데이터를 전달.
+        // 여기서는 멤버 리스트를 전달해야 하므로 member 리스트를 넣어주었음
+        return "members/memberList";
     }
 }
