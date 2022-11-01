@@ -1,12 +1,16 @@
 // 3. 회원 관리 예제 - 백엔드 개발 - 2) 회원 도메인과 리포지토리 만들기
 // 3. 회원 관리 예제 - 백엔드 개발 - 3) 회원 리포지토리 테스트 케이스 작성
 // 회원 리포지토리 구현체
+// 4.스프링 빈과 의존관계 - 1) 컴포넌트 스캔과 자동 의존관계 설정
 
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member; // implement결과
+import org.springframework.stereotype.Repository;
+
 import java.util.*; // implement 결과
 
+@Repository // import 4.1
 public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store= new HashMap<>(); // import(Map, HashMap) 필요. 저장할 곳. member의 id와 member가 key,value꼴로 저장됨.
     private static long sequence= 0L;
