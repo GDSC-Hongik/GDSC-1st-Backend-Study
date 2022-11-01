@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest // 스프링 컨테이너와 테스트를 함께 실행
 @Transactional // 테스트 시작 전 트랜잭션을 시작하고, 완료 후 롤백함
 class MemberServiceIntegrationTest {
-
+    // 통합 테스트보다 단위 테스트를 잘 만드는 것이 중요
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository; // 구현체는 SpringConfig에서 확정
 
