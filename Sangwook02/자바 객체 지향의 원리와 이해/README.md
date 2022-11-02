@@ -573,3 +573,81 @@ annotation이 활성화되면, 어딘가에 등록된 bean들의 @Autowired와 @
 <!--만약 시작 태그와 --- 끝 태그의 사이에 하이픈이 두 개 이상 연속된다면 오류가 발생-->
 <!--하이픈이-시작과-끝-태그-사이에-존재는-하지만-연속되지는-않는다면-정상-작동-->
 ```
+
+
+# AOP - aspect oriented programming
+
+- 스프링의 AOP == 로직 주입
+- 횡단 관심사: 다수의 모듈에 공통적으로 등장하는 부분
+- 반사/중복(횡단 관심사)은 분리해서 하나로 관리
+- AOP를 적용하면 전체 코드의 양은 늘어도, 유지 보수할 때 신경 쓸 부분은 줄어듦.
+- 아래와 같은 Boy.java와 Girl.java가 있다면 횡단 관심사를 뽑아낼 수 있다.
+    - Boy.java
+        
+        ```java
+        package aop001;
+        
+        public class Boy {
+        	public void runSomething() {
+        		System.out.println("열쇠로 문을 열고 집에 들어간다.");
+        
+        		try {
+        			System.out.println("컴퓨터로 게임을 한다.");
+        		} catch (Exception ex) {
+        			if (ex.getMessage().equals("집에 불남")) {
+        				System.out.println("119 에 신고한다.");
+        			}
+        		} finally {
+        			System.out.println("소등하고 잔다.");
+        		}
+        
+        		System.out.println("자물쇠를 잠그고 집을 나선다.");
+        	}
+        }
+        ```
+        
+    - Girl.java
+        
+        ```java
+        package aop001;
+        
+        public class Girl {
+        	public void runSomething() {
+        		System.out.println("열쇠로 문을 열고 집에 들어간다.");
+        
+        		try {
+        			System.out.println("요리를 한다.");
+        		} catch (Exception ex) {
+        			if (ex.getMessage().equals("집에 불남")) {
+        				System.out.println("119 에 신고한다.");
+        			}
+        		} finally {
+        			System.out.println("소등하고 잔다.");
+        		}
+        
+        		System.out.println("자물쇠를 잠그고 집을 나선다.");
+        	}
+        }
+        Footer
+        © 2022 GitH
+        ```
+        
+    - 횡단 관심사
+        - 문 열고 집 들어가기
+        - 집에 불나면 신고하기
+        - 소등하고 자기
+        - 문 잠그고 집 나서기
+- Boy.java와 Girl.java에서 제거한 횡단 관심사는 다른 java 클래스에서 처리.
+
+### 용어 정리
+
+- Pointcut: 횡단 관심사를 적용할 타깃 메서드를 지정하는 것
+- JoinPoint: Aspect 적용이 가능한 지점
+- Advice: 언제 무엇을 PointCut에 적용하는가
+- Aspect: advices + PointCuts
+
+# PSA
+
+PSA == 일관성 있는 서비스 추상화
+
+서비스 추상화 == 다수의 기술을 공통된 인터페이스로 제어할 수 있게 한 것.
