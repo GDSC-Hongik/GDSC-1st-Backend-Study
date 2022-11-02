@@ -30,6 +30,7 @@ public class ApplicationContextBasicFindTest {
 
     @Test
     @DisplayName("구체 타입으로 조회")
+    // 구체 타입으로 조회하면 변경 시 유연성이 떨어진다.
     void findBeanByName2() {
         MemberServiceImpl memberService = ac.getBean("memberService",
                 MemberServiceImpl.class);
