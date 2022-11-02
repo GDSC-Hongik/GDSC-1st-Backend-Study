@@ -5,12 +5,16 @@ import GDSC.Hongik.hellospring.repository.MemberRepository;
 import GDSC.Hongik.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
 // @Service
+// 스프링은 메서드 실행 시 트랙잭션을 시작하고 정상 종료되면 커밋
+// 런타임 에러 발생하면 롤백. JPA 통핸 데이터 변경은 트랜잭션 안에서 실행
+@Transactional
 public class MemberService {
 
     // private final MemberRepository memberRepository = new MemoryMemberRepository();

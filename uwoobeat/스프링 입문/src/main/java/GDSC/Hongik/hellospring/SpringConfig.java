@@ -2,6 +2,7 @@ package GDSC.Hongik.hellospring;
 
 
 import GDSC.Hongik.hellospring.repository.JdbcMemberRepository;
+import GDSC.Hongik.hellospring.repository.JpaMemberRepository;
 import GDSC.Hongik.hellospring.repository.MemberRepository;
 import GDSC.Hongik.hellospring.repository.MemoryMemberRepository;
 import GDSC.Hongik.hellospring.service.MemberService;
@@ -9,18 +10,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
 
     private DataSource dataSource;
+    private EntityManager em;
 
-    // DI for DataSource
-    @Autowired
-    public SpringConfig(DataSource dataSource) {
+    public SpringConfig(DataSource dataSource, EntityManager em) {
         this.dataSource = dataSource;
+        this.em = em;
     }
+
+//
+//    // DI for DataSource
+//    @Autowired
+//    public SpringConfig(DataSource dataSource) {
+//        this.dataSource = dataSource;
+//    }
 
     @Bean
     public MemberService memberService() {
@@ -35,6 +44,7 @@ public class SpringConfig {
         // 직접 등록하는 방식을 채용한다.
         // return new MemoryMemberRepository();를 다른 생성자로 바꿔주기만 하면 된다.
         // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        // return new JdbcMemberRepository(dataSource);
+        // return new JpaMemberRepository(em);
     }
 }
