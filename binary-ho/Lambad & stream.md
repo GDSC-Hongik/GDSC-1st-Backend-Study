@@ -243,7 +243,7 @@ Function<Integer, int[]> factory3 = int[]::new;
 매개 변수가 있는 생성자라면, 그에 맞는걸로 해주면 된다. 물론 배열도 된다.
 
 
-# 2 스트림 (stream)
+# 2. 스트림 (stream)
 스트림이란 앞서 언급한 것 처럼! 빅 데이터의 중요성이 증대되면서, 병렬화 기술을 이용한 컬렉션 사용의 효율을 높이기 위해 등장했다. <br>
 
 기존의 for 문이나, Iterator을 이용한 탐색은 길고 알아보기도 힘들었고, 재사용성도 떨어졌으며, 소스별로 다루는 방식이 달라 여간 불편한 것이 아니였다. <br>
@@ -445,7 +445,7 @@ Arrays.stream(ages)
 
 
 ### Reference
-- [bugoverdose님 블로그](https://bugoverdose.github.io/development/stream-lazy-evaluation/)
 - 자바의 정석 2권 <남궁민 저>
+- 스프링 입문을 위한 자바 객체지향
+- [bugoverdose님 블로그](https://bugoverdose.github.io/development/stream-lazy-evaluation/)
 - <!-- https://developer-joe.tistory.com/197 -->
-
