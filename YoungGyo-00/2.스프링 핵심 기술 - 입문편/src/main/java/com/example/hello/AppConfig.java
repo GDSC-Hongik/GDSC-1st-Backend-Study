@@ -15,18 +15,24 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
+    // @Bean memberService -> new MemoryMemberRepository()
+    // 이러면 싱글톤이 깨질까?
+
     @Bean
     public MemberService memberService() {
+        System.out.println("MemberServiceImpl");
         return new MemberServiceImpl(memberRepository());
     }
 
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService() {
+        System.out.println("orderService");
         return new OrderServiceImpl(
                 memberRepository(),
                 discountPolicy()
