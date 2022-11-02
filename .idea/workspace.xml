@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment=".idea 제거" />
+    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment=".idea 제거">
+      <change afterPath="$PROJECT_DIR$/.idea/gdsc-backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/3주차 스터디 (10.7 ~ 10.14).md" beforeDir="false" afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/3주차 스터디 (10.7 ~ 10.14).md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +31,9 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="프로젝트" />
     <property name="project.structure.proportion" value="0.0" />
@@ -44,6 +50,7 @@
       <workItem from="1664469772490" duration="434000" />
       <workItem from="1664470209158" duration="39000" />
       <workItem from="1664470269156" duration="173000" />
+      <workItem from="1667307994842" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="깃 연결 테스트 커밋">
       <created>1664469948879</created>
