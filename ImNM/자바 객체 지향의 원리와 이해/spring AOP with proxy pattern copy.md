@@ -1,8 +1,11 @@
 ## proxy
 
+![1200px-Proxy_pattern_diagram svg](https://user-images.githubusercontent.com/13329304/199503839-f17411f2-35bf-4b46-908c-74306aefa11e.png)
 프록시 기본은 인터페이스를 통해서
 공통의 인터페이스를 상속받아서
 원본 클래스 앞뒤로 메소드 사이에 어떤 동작을 넣으면 됨.
+
+- 공통으로 바라볼 인터페이스
 
 ```java
 public interface Bookservice {
@@ -10,6 +13,8 @@ public interface Bookservice {
 
 }
 ```
+
+- 실 구현체
 
 ```java
 @Service
@@ -22,6 +27,8 @@ public class BookServiceImpl implements  Bookservice{
     }
 }
 ```
+
+- 프록시로 감쌈
 
 ```java
 @Service
@@ -42,6 +49,8 @@ public class BookServiceProxy implements Bookservice{
     }
 }
 ```
+
+- 클라이언트
 
 ```java
  Bookservice bookServiceProxy = cx.getBean("bookServiceProxy", Bookservice.class);
@@ -94,6 +103,8 @@ bookservice.rent(new Book("테스트 북"));
                 return method.invoke(bookServiceClass, objects);
             }
         };
+
+        // Enhancer ( CGLIB 꺼임 )
         BookServiceClass cglibProxy = (BookServiceClass) Enhancer.create(BookServiceClass.class, handler);
         cglibProxy.rent(new Book("asdfadsf"));
 
@@ -101,3 +112,5 @@ bookservice.rent(new Book("테스트 북"));
 
 
 ```
+
+![무제](https://user-images.githubusercontent.com/13329304/199504425-87f8c908-e931-4a79-b8e8-037e27bfe0e4.jpg)
