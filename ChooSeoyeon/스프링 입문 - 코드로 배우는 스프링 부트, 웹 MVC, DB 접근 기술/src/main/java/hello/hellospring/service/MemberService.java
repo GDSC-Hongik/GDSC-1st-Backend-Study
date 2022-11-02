@@ -3,6 +3,7 @@
 // 4.스프링 빈과 의존관계 - 1) 컴포넌트 스캔과 자동 의존관계 설정
 // 4.스프링 빈과 의존관계 - 2) 자바코드로 직접 스프링 빈 등록
 // 7. AOP - 1) AOP가 필요한 상황
+// 7. AOP - 2) AOP 적용 -> 7.1 주석 처리하고 원래대로 되돌리기
 
 package hello.hellospring.service;
 
@@ -29,18 +30,23 @@ public class MemberService {
      * 회원 가입
      */
     public Long join(Member member) { // import.
-        long start = System.currentTimeMillis(); // 7.1
-
-        try{
-            // 같은 이름이 있는 중복 회원 X
-            validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
-            memberRepository.save(member);
-            return member.getId();
-        } finally { // try finally문 쓰면 finally는 위의 로직 터져도 항상 들어옴 7.1
-            long finish = System.currentTimeMillis();
-            long timeMs = finish - start;
-            System.out.println("join = " + timeMs + "ms");
-        }
+        // 같은 이름이 있는 중복 회원 X
+        validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
+        memberRepository.save(member);
+        return member.getId();
+// 7.1
+//        long start = System.currentTimeMillis(); // 7.1
+//
+//        try{
+//            // 같은 이름이 있는 중복 회원 X
+//            validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
+//            memberRepository.save(member);
+//            return member.getId();
+//        } finally { // try finally문 쓰면 finally는 위의 로직 터져도 항상 들어옴 7.1
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("join = " + timeMs + "ms");
+//        }
     }
 
     private void validateDuplicateMember(Member member) {
@@ -60,15 +66,16 @@ public class MemberService {
      * 전체 회원 조회
      */
     public List<Member> findMembers(){ // import List
-        long start = System.currentTimeMillis(); // 7.1
-        try{
-            return memberRepository.findAll();
-        }finally{ // 7.1
-            long finish = System.currentTimeMillis();
-            long timeMs = finish - start;
-            System.out.println("join = " + timeMs + "ms");
-        }
-
+        return memberRepository.findAll();
+// 7.1
+//        long start = System.currentTimeMillis(); // 7.1
+//        try{
+//            return memberRepository.findAll();
+//        }finally{ // 7.1
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("join = " + timeMs + "ms");
+//        }
     }
 
     public Optional<Member> findOne(Long memberId){

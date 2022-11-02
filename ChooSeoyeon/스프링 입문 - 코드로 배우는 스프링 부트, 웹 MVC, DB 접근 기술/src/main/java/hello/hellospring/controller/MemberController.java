@@ -1,6 +1,7 @@
 // 4. 스프링 빈과 의존관계 - 1) 컴포넌트 스캔과 자동 의존관계 설정
 // 5. 회원 관리 예제_웹 MVC 개발 - 2) 회원 웹 기능-등록
 // 5. 회원 관리 예제_웹 MVC 개발 - 3) 회원 웹 기능-조회
+// 7. AOP - 2) AOP 적용 -> 프록시 확인
 
 package hello.hellospring.controller;
 
@@ -23,6 +24,7 @@ public class MemberController {
     @Autowired // import Autowired 4.1
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = "+ memberService.getClass()); // 7.2
     }
 
     // 5.2
