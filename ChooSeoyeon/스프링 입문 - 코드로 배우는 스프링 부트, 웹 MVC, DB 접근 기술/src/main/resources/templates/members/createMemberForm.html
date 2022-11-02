@@ -1,0 +1,16 @@
+<!-- 5. 회원 관리 예제_웹 MVC 개발 - 2) 회원 웹 기능-등록 -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/members/new" method="post"> <!-- MemberController의 PostMapping으로 감 -->
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요"> <!-- name은 서버로 넘어갈 때 키임-->
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
