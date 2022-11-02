@@ -3,13 +3,18 @@ package GDSC.Hongik.hellospring.service;
 import GDSC.Hongik.hellospring.domain.Member;
 import GDSC.Hongik.hellospring.repository.MemberRepository;
 import GDSC.Hongik.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+// @Service
+// 스프링은 메서드 실행 시 트랙잭션을 시작하고 정상 종료되면 커밋
+// 런타임 에러 발생하면 롤백. JPA 통핸 데이터 변경은 트랜잭션 안에서 실행
+@Transactional
 public class MemberService {
 
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -18,10 +23,18 @@ public class MemberService {
     // MR을 내부에서 직접 new로 생성하는 것이 아니라,
     // 외부로부터 인자를 받아서 멤버 변수에 할당해주는 방식
     // MR이 인스턴스마다 존재하는 문제를 해결하기 위함
+    // @Autowired // DI
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
+//    // DI by setter
+//    // 생성자를 사용한 의존성 주입은 생성할 때만 가능하다는 단점이 있다.
+//    // 속성을 통한 의존성 주입은 이를 해결할 수 있다.
+//    // 하지만 일반적으로 한번 주입된 의존성은 잘 수정되지 않는다. 따라서 생성자 방식이 선호된다.
+//    public void setMemberRepository(MemberRepository memberRepository) {
+//        this.memberRepository = memberRepository;
+//    }
 
     /*
     * 회원가입
