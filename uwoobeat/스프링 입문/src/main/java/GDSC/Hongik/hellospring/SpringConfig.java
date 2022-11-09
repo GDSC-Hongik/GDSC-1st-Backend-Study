@@ -1,6 +1,7 @@
 package GDSC.Hongik.hellospring;
 
 
+import GDSC.Hongik.hellospring.aop.TimeTraceAop;
 import GDSC.Hongik.hellospring.repository.JdbcMemberRepository;
 import GDSC.Hongik.hellospring.repository.JpaMemberRepository;
 import GDSC.Hongik.hellospring.repository.MemberRepository;
@@ -53,5 +54,11 @@ public class SpringConfig {
 //        // return new MemoryMemberRepository();
 //        // return new JdbcMemberRepository(dataSource);
 //        // return new JpaMemberRepository(em);
+//    }
+
+    // 이렇게 AOP를 직접 등록하거나, 컴포넌트 스캔할 수도 있음.
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 }
