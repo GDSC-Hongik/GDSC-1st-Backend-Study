@@ -1,6 +1,6 @@
 package jpabook.japshop.domain.item;
 
-import jdk.jfr.Category;
+import jpabook.japshop.domain.Category;
 import lombok.Getter;
 import lombok.Setter;
 
