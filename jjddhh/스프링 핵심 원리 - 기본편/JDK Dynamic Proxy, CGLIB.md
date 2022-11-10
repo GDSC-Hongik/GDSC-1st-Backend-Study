@@ -12,7 +12,7 @@
     
 * 부가 기능 추가
     1) 원래 서버가 제공하는 기능에 더해서 부가 기능을 수행 (ex. 로그)
-        
+      
 ```
 
 <br/>
@@ -42,11 +42,11 @@
 
 - 두 가지 방법의 공통적인 단점
 
-```  
+
 적용하려는 클래스마다 프록시 클래스를 만들어야 한다.
 
 만약 적용해야 하는 대상 클래스가 100개라면 프록시 클래스도 100개 작성해야 한다.
-```
+
 
 ![proxy](https://user-images.githubusercontent.com/92728780/198859162-99e28a94-c990-44c6-9a8f-cca88d914897.JPG)
 
@@ -215,10 +215,9 @@ public class CglibTest {
 
 <br/>
 
-> 남은 문제
-> 
-> 현재로써는 두 기술을 함께 사용하여 부가 기능을 제공하기 위해서는, 
-> 클래스의 인터페이스 구현 유무에 따라 JDK 동적 프록시가 제공하는 InvocationHandler 와 CGLIB가 제공하는 MethodInterceptor 를 각각 만들어 줘야 한다.
+현재로써는 두 기술을 함께 사용하여 부가 기능을 제공하기 위해서는, 
+
+ 클래스의 인터페이스 구현 유무에 따라 JDK 동적 프록시가 제공하는 InvocationHandler 와 CGLIB가 제공하는 MethodInterceptor 를 각각 만들어 줘야 한다.
 
 <br/>
 
@@ -356,10 +355,12 @@ public class PackageLogTraceProxyPostProcessor implements BeanPostProcessor {
 ![자동 프록시 생성기](https://user-images.githubusercontent.com/92728780/198859120-3fb37ad2-74d6-409f-a4d7-076f62cb49e0.JPG)
 
 <br/>
+
 빈 후처리기를 통해 
 
 1. 너무 많은 설정 - 프록시를 적용하고자 하는 클래스마다 관련 설정을 해주어야 함
 2. 컴포넌트 스캔 사용 시, 프록시 적용 
+
 
 두 가지의 문제를 해결 할 수 있었다.
 
