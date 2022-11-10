@@ -1230,4 +1230,307 @@ public class Start4 {
 
 ## 2. AOP - Aspect? 관점? 핵심 관심사? 횡단 관심사?
 
-## 3. PSA - 일관성 있는 서비스 추상화
+### 1) 스프링에서 AOP란?
+
+- 정의)
+    - 공통 관심 사항(cross-cutting concern)과 핵심 관심 사항(core concern) 분리한 후, 분리한 공통 관심 사항을 원하는 곳에 적용
+        - 자바의 AOP 구현체: AspectJ, 스프링 AOP
+    - 관점 지향 프로그래밍(Aspect-oriented Programming)
+        - 어떤 로직을 기준으로 관점으로 나누어 보고, 그 관점을 기준으로 각각 모듈화하는 프로그래밍 기법
+        - ex) 그림 - 공통 관심사를 모듈로 분리한 후, 후에 원하는 곳에 공통관심사를 적용함
+            
+            ![aop01.png](%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A1%E1%86%B7%E1%84%80%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%87%E1%85%A9%20ca451899398b4e7b9d0609898fcf49fd/aop01.png)
+            
+            - 여러 클래스, 메서드에 걸쳐서 나타나는 비슷한 코드들(노랑, 파랑, 빨강)이 각 관점의 관심사임
+            - 관심사(노랑, 파랑, 빨강 코드)를 관점(X, Y, Z) 별로 모듈화함
+            - 후에 이를 핵심적인 비즈니스 로직에서 재사용함
+- 용어)
+    - Concern
+        - 관심사
+        - 코드 = 공통 관심사(횡단 관심사) + 핵심 관심사
+    - Aspect
+        - 관점
+        - 흩어진 공통 관심사를 묶어서 모듈화한 하나의 모듈
+        - Aspect = Point Cut들 + Advice들
+    - Target
+        - Aspect가 가지고 있는 Advice가 적용되는 대상(클래스, 메서드)
+    - Point Cut
+        - Aspect 적용 위치 지정자
+        - 스프링 → 공통 관심사를 적용할 타깃 클래스의 타깃 메서드 지정자
+    - Join Point
+        - Aspect 적용이 가능한(Point cut의 후보가 되는) 모든 지점
+        - Join Point $\supset$ Point cut
+    - Advice
+        - 조언, 충고
+        - Pointcut에 언제, 무엇을 적용할지 정의한 메서드
+- 장점)
+    - 핵심 관심사항과 공통 관심 사항을 분리함
+        - 핵심 관심 사항을 깔끔하게 유지할 수 있음.
+        - 원하는 적용 대상을 선택할 수 있음
+        - 변경이 필요하면 공통 로직 하나만 변경하면 됨
+            - 단일 책임 원칙 적용
+
+### 2) AOP가 필요한 상황
+
+- 예시
+    - 상황) 모든 메서드의 호출 시간을 측정하고 싶음
+    - 코드) 각 메서드에 시간 측정 코드 넣음
+        
+        ```java
+        /**
+             * 회원 가입
+             */
+            public Long join(Member member) { // import.
+                long start = System.currentTimeMillis(); // 7.1
+        
+                try{
+                    // 같은 이름이 있는 중복 회원 X
+                    validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
+                    memberRepository.save(member);
+                    return member.getId();
+                } finally { // try finally문 쓰면 finally는 위의 로직 터져도 항상 들어옴 7.1
+                    long finish = System.currentTimeMillis();
+                    long timeMs = finish - start;
+                    System.out.println("join = " + timeMs + "ms");
+                }
+            }
+        ```
+        
+    - 문제)
+        - 회원 가입, 회원 조회에 시간을 측정하는 기능은 핵심 관심 사항이 아님
+        - 시간을 측정하는 로직은 공통 관심 사항임.
+        - 시간을 측정하는 로직과 핵심 비즈니스 로직이 섞여 있어 유지 보수가 어려움
+        - 시간을 측정하는 로직을 별도의 공통 로직으로 만들기 매우 어려움
+        - 시간을 측정하는 로직을 변경할 때 모든 로직을 찾아가면서 변경해야 함
+    - 해결) AOP(Aspect Oriented Programming) 사용
+        - 공통 관심 사항(cross-cutting concern) vs 핵심 관심 사항(core concern) 분리
+
+### 3) AOP 적용
+
+1. AOP 패키지 만들기 `hello.hellospring.aop`
+2. TimeTraceAop 클래스 만들기 
+    - TimeTraceAop.java
+        
+        ```java
+        package hello.hellospring.aop;
+        
+        public class TimeTraceAop {
+        }
+        ```
+        
+3. @Aspect 붙이기
+    - 에러) @Aspect 임포트가 안됨
+    - 해결)
+        - aop 의존성 추가하기 위해 build gradle에 `implementation 'org.springframework.boot:spring-boot-starter-aop'` 추가
+        - 추가하고 build.gradle을 수정한 후 reload버튼을 클릭
+            - reload 버튼 위치
+                
+                build.gradle 수정 후 좌측에 Gradle 창 열면 코드 좌측 상단에 자동으로 함께 뜸
+                
+                ![Untitled](%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A1%E1%86%B7%E1%84%80%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%87%E1%85%A9%20ca451899398b4e7b9d0609898fcf49fd/Untitled.png)
+                
+4. 코드 작성
+    - main/java/hello.hellospring.aop/TimeTraceAop.java
+        
+        ```java
+        package hello.hellospring.aop;
+        
+        import org.aspectj.lang.ProceedingJoinPoint; // import ProceedingJoinPoint
+        import org.aspectj.lang.annotation.Aspect; // import Aspect.
+        
+        @Aspect // import Aspect. build.gradle 수정해야 import 제대로 됨
+        public class TimeTraceAop {
+        
+            public Object execute(ProceedingJoinPoint joinPoint) throws Throwable { // import ProceedingJoinPoint
+                long start = System.currentTimeMillis();
+                System.out.println("START:" + joinPoint.toString());
+                try{
+                    // Object result = joinPoint.proceed();
+                    // return result;
+                    return joinPoint.proceed(); // refactor -> inline variable. 위 두 줄을 inline함
+                } finally {
+                    long finish = System.currentTimeMillis();
+                    long timeMs = finish - start;
+                    System.out.println("END = " + joinPoint.toString() + " " + timeMs + "ms");
+                }
+            }
+        }
+        ```
+        
+5. 스프링 빈으로 등록하기
+    
+    1) @Component 붙여서 컴포넌트 스캔
+    
+    - main/java/hello.hellospring.aop/TimeTraceAop.java
+        
+        ```java
+        package hello.hellospring.aop;
+        
+        import org.aspectj.lang.ProceedingJoinPoint; // import ProceedingJoinPoint
+        import org.aspectj.lang.annotation.Aspect; // import Aspect.
+        import org.springframework.stereotype.Component; // import Component.
+        
+        @Aspect // import Aspect. build.gradle 수정해야 import 제대로 됨
+        @Component // import Component. 스프링 빈 등록
+        public class TimeTraceAop {
+        
+            public Object execute(ProceedingJoinPoint joinPoint) throws Throwable { // import ProceedingJoinPoint
+                long start = System.currentTimeMillis();
+                System.out.println("START:" + joinPoint.toString());
+        				...
+        ```
+        
+    
+    2) 스프링 빈에 등록해서 쓰기
+    
+    - main/java/hello.hellospring/SpringConfig
+        
+        ```java
+        package hello.hellospring;
+        
+        import hello.hellospring.aop.TimeTraceAop; // import TimeTraceAop 7.2
+        import hello.hellospring.repository.MemberRepository; // import MemberRepository
+        import hello.hellospring.repository.MemoryMemberRepository; // import MemoryMemberRepository
+        import hello.hellospring.service.MemberService; // import MemberService
+        import org.springframework.context.annotation.Bean; // import Bean
+        import org.springframework.context.annotation.Configuration; // import Configuration
+        
+        @Configuration // import Configuration
+        public class SpringConfig {
+            @Bean // import Bean
+            public MemberService memberService() { // import MemberService
+                return new MemberService(memberRepository());
+            }
+        
+            @Bean
+            public MemberRepository memberRepository(){ // import MemberRepository
+                return new MemoryMemberRepository(); // import MemoryMemberRepository
+            }
+        
+            @Bean // 7.2 AOP 스프링 빈 등록
+            public TimeTraceAop timeTraceAop() { // import TimeTraceAop 7.2
+                return new TimeTraceAop();
+            }
+        }
+        ```
+        
+6. 공통 관심사를 어디에 적용할지 타겟팅 @Around
+    - main/java/hello.hellospring.aop/TimeTraceAop.java
+        
+        ```java
+        package hello.hellospring.aop;
+        
+        import org.aspectj.lang.ProceedingJoinPoint; // import ProceedingJoinPoint
+        import org.aspectj.lang.annotation.Around; // import Around
+        import org.aspectj.lang.annotation.Aspect; // import Aspect.
+        import org.springframework.stereotype.Component; // import Component.
+        
+        @Aspect // import Aspect. build.gradle 수정해야 import 제대로 됨
+        @Component // import Component. 스프링 빈 등록
+        public class TimeTraceAop {
+            @Around("execution(* hello.hellospring..*(..))") // import Around. 여기선 hello.hellospring에 있는 거 다 적용함
+            public Object execute(ProceedingJoinPoint joinPoint) throws Throwable { // import ProceedingJoinPoint
+                long start = System.currentTimeMillis();
+                System.out.println("START:" + joinPoint.toString());
+                try{
+                    // Object result = joinPoint.proceed();
+                    // return result;
+                    return joinPoint.proceed(); // refactor -> inline variable. 위 두 줄을 inline함
+                } finally {
+                    long finish = System.currentTimeMillis();
+                    long timeMs = finish - start;
+                    System.out.println("END = " + joinPoint.toString() + " " + timeMs + "ms");
+                }
+            }
+        }
+        ```
+        
+    - 적용 대상 변경
+        - ex) service에만 적용
+            
+            `@Around("execution(* hello.hellospring.service..*(..))")`
+            
+7. 기존에 적어둔 시간 측정 코드 주석 처리하고 원래대로 되돌리기
+    - main/java/hello.hellospring.service/MemberService.jav
+        
+        ```java
+        public class MemberService {
+            // private final MemberRepository memberRepository = new MemoryMemberRepository(); // 변경 전(3.4)
+            private final MemberRepository memberRepository; // import. 리포지토리 생성. 변경 후(3.5)
+        
+            //@Autowired // import 4.1
+            public MemberService(MemberRepository memberRepository) { // Alt + Insert로 Constructor(생성자)
+                this.memberRepository = memberRepository; // memberRepository를 직접 생성하는게 아니라 외부에서 넣어줌
+            }
+        
+            /**
+             * 회원 가입
+             */
+            public Long join(Member member) { // import.
+                // 같은 이름이 있는 중복 회원 X
+                validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
+                memberRepository.save(member);
+                return member.getId();
+        // 7.1
+        //        long start = System.currentTimeMillis(); // 7.1
+        //
+        //        try{
+        //            // 같은 이름이 있는 중복 회원 X
+        //            validateDuplicateMember(member); // extract method 사용했음(ctrl+alt+shift+t)
+        //            memberRepository.save(member);
+        //            return member.getId();
+        //        } finally { // try finally문 쓰면 finally는 위의 로직 터져도 항상 들어옴 7.1
+        //            long finish = System.currentTimeMillis();
+        //            long timeMs = finish - start;
+        //            System.out.println("join = " + timeMs + "ms");
+        //        }
+            }
+        
+            private void validateDuplicateMember(Member member) {
+                memberRepository.findByName(member.getName()) // 결과가 optional임 -> optionalmember.ifPrest 가능
+                        .ifPresent( m-> {
+                            throw new IllegalStateException("이미 존재하는 회원입니다.");
+                }); // m에 member가 들어오면(null이 아니면) 이미 존재하는 회원이라고 해줌.
+                /* 위 코드는 아래를 줄인 버전임
+                Optional<Member> result = memberRepository.findByName(member.getName());
+                result.ifPresent(m->{
+                    throw new IllegalStateException("이미 존재하는 회원입니다.");
+                });
+                */
+            }
+        
+            /**
+             * 전체 회원 조회
+             */
+            public List<Member> findMembers(){ // import List
+                return memberRepository.findAll();
+        // 7.1
+        //        long start = System.currentTimeMillis(); // 7.1
+        //        try{
+        //            return memberRepository.findAll();
+        //        }finally{ // 7.1
+        //            long finish = System.currentTimeMillis();
+        //            long timeMs = finish - start;
+        //            System.out.println("join = " + timeMs + "ms");
+        //        }
+            }
+        ```
+        
+8. 회원 목록 들어가서 시간 측정 결과 확인
+    - 터미널 (전체 적용)
+        
+        ```java
+        START:execution(String hello.hellospring.controller.MemberController.list(Model))
+        START:execution(List hello.hellospring.service.MemberService.findMembers())
+        START:execution(List hello.hellospring.repository.MemoryMemberRepository.findAll())
+        END = execution(List hello.hellospring.repository.MemoryMemberRepository.findAll()) 4ms
+        END = execution(List hello.hellospring.service.MemberService.findMembers()) 11ms
+        END = execution(String hello.hellospring.controller.MemberController.list(Model)) 16ms
+        ```
+        
+    - 터미널 (service만 적용)
+        
+        ```java
+        START:execution(List hello.hellospring.service.MemberService.findMembers())
+        END = execution(List hello.hellospring.service.MemberService.findMembers()) 9ms
+        ```
