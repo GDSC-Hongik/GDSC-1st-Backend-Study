@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : image 위치 조정">
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/autoincrement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/분산형DB.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +26,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FRzdENdwBuMw4nwBy3pM21Ehlr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +49,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -58,6 +68,8 @@
       <workItem from="1667307994842" duration="50000" />
       <workItem from="1667395988405" duration="733000" />
       <workItem from="1667902495214" duration="12000" />
+      <workItem from="1668045497418" duration="756000" />
+      <workItem from="1668052601058" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="깃 연결 테스트 커밋">
       <created>1664469948879</created>
