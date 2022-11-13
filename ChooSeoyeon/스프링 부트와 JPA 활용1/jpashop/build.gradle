@@ -1,4 +1,5 @@
-//1. 프로젝트 환경설정 - 1) 프로젝트 생성 -> Junit 적용
+// 1. 프로젝트 환경설정 - 1) 프로젝트 생성 - Junit 적용
+// 1. 프로젝트 환경설정 - 2) View 환경 설정 - devtools
 
 plugins {
 	id 'java'
@@ -25,11 +26,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// 1.2) html 파일 컴파일만 하면 서버 재시작 없이 View 파일 변경 가능
+	implementation 'org.springframework.boot:spring-boot-devtools'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	//JUnit4 추가
+	// 1.1) JUnit4 추가
 	testImplementation("org.junit.vintage:junit-vintage-engine") {
 		exclude group: "org.hamcrest", module: "hamcrest-core"
 	}
