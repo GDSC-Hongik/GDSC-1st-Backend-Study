@@ -1,0 +1,20 @@
+# 1. 프로젝트 환경설정 - 5) JPA와 DB 설정, 동작확인 - yml
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop    # 뒤에 ;MVCC=TRUE 넣으면 오류 발생
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create # 애플리케이션 실행 시점에 테이블을 drop 하고, 다시 생성
+    properties:
+      hibernate:
+        # show_sql: true
+        format_sql: true
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace # SQL 실행 파라미터를 로그로 남김
