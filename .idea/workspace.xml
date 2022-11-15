@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="837737f2-66d6-4e38-97a0-01e6e40ff657" name="Changes" comment="📝 Update(README.md): 파일 복원" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="jjddhh" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HLgGeKsA3JkuQZzfjyE4nlSF8n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/GDSC-1st-Backend-Study",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="GDSC-1st-Backend-Study" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="GDSC-1st-Backend-Study" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="837737f2-66d6-4e38-97a0-01e6e40ff657" name="Changes" comment="" />
+      <created>1668069686395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668069686395</updated>
+      <workItem from="1668069688910" duration="145000" />
+      <workItem from="1668076331138" duration="1091000" />
+      <workItem from="1668430439728" duration="7452000" />
+      <workItem from="1668506512154" duration="889000" />
+      <workItem from="1668507480636" duration="24000" />
+      <workItem from="1668507512408" duration="19000" />
+      <workItem from="1668507537202" duration="7441000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Docs] 001. 사람을 사랑한 기술">
+      <created>1668433336779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433336779</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Docs] 002. 자바와 절차적,구조적 프로그래밍">
+      <created>1668433352632</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433352632</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Docs] 001. 사람을 사랑한 기술">
+      <created>1668433435564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433435564</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Docs] 002. 자바와 절차적,구조적 프로그래밍">
+      <created>1668433445099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433445099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Docs] 003. 자바와 객체 지향">
+      <created>1668433454343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433454343</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Docs] 004. 자바가 확장한 객체 지향">
+      <created>1668433475712</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433475712</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Docs] 005. 객체 지향 설계 5원칙 - SOLID">
+      <created>1668433483249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433483249</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Docs] 006. 스프링이 사랑한 Design Pattern">
+      <created>1668433493220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433493220</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[Docs] 007. 스프링 삼각형과 설정 정보">
+      <created>1668433524084</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433524084</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[Docs] JDK Dynamic Proxy, CGLIB">
+      <created>1668433539601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433539601</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[Docs] 연관관계 편의 메서드">
+      <created>1668433575506</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433575506</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[Docs] 스프링 입문 책">
+      <created>1668433601202</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433601202</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[Docs] 스프링 입문 책">
+      <created>1668433664081</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433664081</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[Docs] 스프링 입문">
+      <created>1668433669042</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433669042</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[Docs] 스프링 핵심 원리 - 기본편">
+      <created>1668433680205</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433680205</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[Chore] README.md 추가">
+      <created>1668433815514</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433815514</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[Chore] README.md 추가">
+      <created>1668433953139</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668433953139</updated>
+    </task>
+    <task id="LOCAL-00018" summary="📝 Update(README.md): 파일 복원">
+      <created>1668434019605</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668434019605</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Docs] 001. 사람을 사랑한 기술" />
+    <MESSAGE value="[Docs] 002. 자바와 절차적,구조적 프로그래밍" />
+    <MESSAGE value="[Docs] 003. 자바와 객체 지향" />
+    <MESSAGE value="[Docs] 004. 자바가 확장한 객체 지향" />
+    <MESSAGE value="[Docs] 005. 객체 지향 설계 5원칙 - SOLID" />
+    <MESSAGE value="[Docs] 006. 스프링이 사랑한 Design Pattern" />
+    <MESSAGE value="[Docs] 007. 스프링 삼각형과 설정 정보" />
+    <MESSAGE value="[Docs] JDK Dynamic Proxy, CGLIB" />
+    <MESSAGE value="[Docs] 연관관계 편의 메서드" />
+    <MESSAGE value="[Docs] 스프링 입문 책" />
+    <MESSAGE value="[Docs] 스프링 입문" />
+    <MESSAGE value="[Docs] 스프링 핵심 원리 - 기본편" />
+    <MESSAGE value="[Chore] README.md 추가" />
+    <MESSAGE value=" Update(README.md): 파일 복원" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Update(README.md): 파일 복원" />
+  </component>
+</project>
