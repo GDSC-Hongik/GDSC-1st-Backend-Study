@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 @Entity
 @Getter @Setter
-public class Member {
+public class Member1 {
     @Id @GeneratedValue
     private Long id;
     private String username;
