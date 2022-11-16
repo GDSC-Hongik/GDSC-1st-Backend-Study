@@ -1,7 +1,912 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="837737f2-66d6-4e38-97a0-01e6e40ff657" name="Changes" comment="📝 Update(README.md): 파일 복원" />
+    <list default="true" id="837737f2-66d6-4e38-97a0-01e6e40ff657" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gdsc-backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/src/main/java/jpabook/jpahsop/JpahsopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 부트와 JPA 활용1/src/test/java/jpabook/jpahsop/JpahsopApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/HelloSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/aop/TimeTraceAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/hello/hellospring/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/static/hello-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/hello/hellospring/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/hello/hellospring/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooSeoyeon/스프링 입문을 위한 자바 객체 지향의 원리와 이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/HelloSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/aop/TimeTraceAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/repository/JdbcMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/repository/JdbcTemplateMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/repository/JpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/java/hello/hellospring/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/static/hello-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/test/java/hello/hellospring/SpringConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/test/java/hello/hellospring/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/test/java/hello/hellospring/service/MemberServiceIntergrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 입문 - 김영한/hello-spring/src/test/java/hello/hellospring/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/MemberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/OrderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/autowired/AllBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/lifecycle/BeanLifeCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/lifecycle/NetworkClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/스프링 핵심원리 기본/core/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/JpashopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/BookForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/domain/item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/exception/NotEnoughStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/repository/OrderSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/java/jpabook/jpashop/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/fragments/bodyHeader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/items/createItemForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/items/itemList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/items/updateItemForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/main/resources/templates/order/orderList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/test/java/jpabook/jpashop/JpashopApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/test/java/jpabook/jpashop/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/실전! 스프링 부트와 jpa 활용 1/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/자바 객체 지향의 원리와 이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/자바 객체 지향의 원리와 이해/ioc&amp;di.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/자바 객체 지향의 원리와 이해/proxy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/자바 객체 지향의 원리와 이해/spring AOP with proxy pattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImNM/자바 객체 지향의 원리와 이해/자바 메모리 구조.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/JpashopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/OrderSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/exception/NotEnoughStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 실전 JPA1/src/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/HelloSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/java/hello/hellospring/service/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/resources/static/hello-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/test/java/hello/hellospring/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 입문/src/test/java/hello/hellospring/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/MemberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/OrderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/common/MyLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/web/LogDemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/java/hello/core/web/LogDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/스프링 핵심 원리 - 기본편/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sangwook02/자바 객체 지향의 원리와 이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/.idea/YoungGyo-00.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/artifacts/pdf/스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 v2022-09-04.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/GdscApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/aop/TimeTraceAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/domain/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/repository/JdbcTemplateMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/repository/JpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/java/com/example/gdsc/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/com/example/gdsc/GdscApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/com/example/gdsc/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/com/example/gdsc/service/MemberServiceIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술/src/test/java/com/example/gdsc/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/0. 스프링 핵심 원리 - 기본편 v2022-05-15.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/1. 객체 지향 설계와 스프링.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/10. 다음으로.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/2. 스프링 핵심 원리 이해1 - 예제 만들기.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/3. 스프링 핵심 원리 이해2 - 객체 지향 원리 적용.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/4. 스프링 컨테이너와 스프링 빈.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/5. 싱글톤 컨테이너.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/6. 컴포넌트 스캔.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/7. 의존관계 자동 주입.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/8. 빈 생명주기 콜백.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/artifact/강의자료/9. 빈 스코프.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/HelloLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/MemberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/annotation/MainDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/common/MyLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/discount/DiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/discount/FixDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/discount/RateDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/member/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/singleton/SingletonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/singleton/StatefulService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/web/LogDemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/java/com/example/hello/web/LogDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/resources/appConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/HelloApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/autowired/AllBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/autowired/AutowiredTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/beanfind/BeanDefinitionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/discount/RateDiscountPolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/lifecycle/BeanLifeCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/lifecycle/NetworkClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/member/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/AutoAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/filter/BeanA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/filter/BeanB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/filter/ComponentFilterAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/filter/MyIncludeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scan/filter/MyexcludeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scope/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/scope/SingletonWithPrototypeTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/singleton/ConfigurationSingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/singleton/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/singleton/StatefulServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/2.스프링 핵심 기술 - 입문편/src/test/java/com/example/hello/xml/XmlAppContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/JapshopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/domain/item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/exception/NotEnoughStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/java/jpabook/japshop/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/test/java/jpabook/japshop/JapshopApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/test/java/jpabook/japshop/MemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/test/java/jpabook/japshop/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/test/java/jpabook/japshop/service/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/3. 실전! 스프링 부트와 JPA 활용 1편/src/test/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/.idea/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/1주차 스터디 (9.22 ~ 9.29).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/2주차 스터디 (9.30 ~ 10.6).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/3주차 스터디 (10.7 ~ 10.14).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/4주차 스터디 (10.26~11.2).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/5주차 스터디 - 11.10.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/1주차/abstract_class_vs_interface.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/2주차/API.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/2주차/DIP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/2주차/ISP_변경전.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/2주차/ISP_변경후.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/2주차/OCP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/3주차/xml코드.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/3주차/서비스_로케이터에_대한_종속성.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/3주차/스프링_컨테이너.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/4주차/After.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/4주차/Before.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/4주차/Pub-Sub-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/4주차/Pub-Sub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/4주차/실행시간.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/autoincrement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/분산형DB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/7.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/bootJarMainClassName" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/classes/java/main/hello/hellospring/HelloSpringApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/classes/java/main/hello/hellospring/controller/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/classes/java/test/hello/hellospring/HelloSpringApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/libs/hello-spring-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/libs/hello-spring-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/classes/hello.hellospring.HelloSpringApplicationTests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/reports/tests/test/packages/hello.hellospring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/resources/main/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/resources/main/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/test-results/test/TEST-hello.hellospring.HelloSpringApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/HelloSpringApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/SpringConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/aop/TimeTraceAop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/controller/HelloController$Hello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/controller/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/controller/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/controller/MemberController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/controller/MemberForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/domain/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/JdbcMemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/JdbcTemplteMemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/JpaMemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/MemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/MemoryMemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/repository/SpringDataJpaMemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/classes/hello/hellospring/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/production/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/test/classes/hello/hellospring/HelloSpringApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/test/classes/hello/hellospring/MemoryMemberRepositoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/test/classes/hello/hellospring/service/MemberServiceIntegrationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/hello-spring/out/test/classes/hello/hellospring/service/MemberServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/스프링 입문 강의/정리/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/자바 객체 지향 스프링 책/1-4장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/자바 객체 지향 스프링 책/5장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/자바 객체 지향 스프링 책/6장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allllfo/자바 객체 지향 스프링 책/7장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/Lambad &amp; stream.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/Strategy Pattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/Template Callback Pattern in Spring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/The Law of Demeter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/1. 객체 지향과 스프링.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/10. Bean Scope.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/2. AppConfig와 스프링 컨테이너.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/3. 스프링 컨테이너와 스프링 빈.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/4. 웹 애플리케이션과 싱글톤.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/5. 컴포넌트 스캔과 의존관계 자동 주입.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/6. 컴포넌트 스캔 탐색 위치와 기본 스캔 대상.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/7. 컴포넌트 스캔 필터, 중복 등록, 충돌.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/8. 의존관계 자동 주입.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/9. 빈 생명주기 콜백" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 기본편 - 김영한/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/1. 프로젝트 환경설정.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/2. 도메인 분석 설계.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/2.4 엔티티 클래스 개발하기.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/2.5 엔티티 설계시 주의점.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/3. 회원 도메인 개발.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/4. 상품 도메인 개발.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/5. [중요] 주문 도메인 개발.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/5.6 주문 검색 기능 - JPA 동적 쿼리.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/6. 도메인 개발 + Alpha.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/7. 웹 계층 개발.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/Spring Boot Test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 1 - 김영한/연관관계의 주인.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 2 - 김영한/1 [중요] 회원 등록 , 수정, 조회 API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 실전 JPA 2 - 김영한/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/3. 스프링 웹 개발 기초.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/4. 회원 관리 예제.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/5. 스프링 빈과 의존관계.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/6. GetMapping - 예제 2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/7. AOP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/repository/JpaMemberRepositoty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/스프링 입문 - 김영한/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/2. 자바와 절차적 구조적 프로그래밍.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/3. 자바와 객체지향.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/3.6 상속 - 재사용 + 확장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/3.7 다형성과 캡슐화.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/4. 자바가 확장한 객체지향.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/5. 객체 지향 설계 5원칙 - SOLID.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/6. 스프링이 사랑한 디자인패턴.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/7. 스프링 삼각형과 설정 정보.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/7. 의존 관계 주입의 3가지 방법과 장단점.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/7.1. IoC, DI - 제어의 역전, 의존성 주입.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/7.1.7 스프링 애노테이션을 통한 의존성 주입.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/7.2 AOP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/A. 스프링 MVC를 이용한 게시판 구축.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/B. Lambda and Interface in Java 8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/Strategy Pattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary-ho/자바 객체 지향의 원리와 이해/Template Callback Pattern in Spring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/Log4j2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/JpashopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/java/jpabook/jpashop/domain/item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/test/java/jpabook/jpashop/JpashopApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/jpashop/src/test/java/jpabook/jpashop/MemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 부트와 JPA 활용1/manytomany.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 입문/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 입문/Singleton.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 입문/SpringContainer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 입문/Thymeleaf.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/MemberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/OrderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/MemberRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/resources/appConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/beandefinition/BeanDefinitionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/scan/AutoAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/singleton/ConfigurationSingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/singleton/SingletonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/singleton/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/singleton/StatefulService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/singleton/StatefulServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/core/src/test/java/hello/core/xml/XmlAppContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/스프링 핵심원리 기본편/역할과 구현 분리.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/1.사람을 사랑한 기술.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/2.자바와 절차적,구조적 프로그래밍.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/3.자바와 객체지향.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/4.자바가 확장한 객체 지향.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/5.객체 지향 설계 5원칙 - SOLID.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/6.스프링이 사랑한 디자인 패턴.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/7.스프링 삼각형과 설정 정보.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhandev/자바 객체 지향의 원리와 이해/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/markdown/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/markdown/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/markdown/img2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/JpashopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/item/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/item/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/item/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/domain/item/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/java/jpabook/jpashop/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/test/java/jpabook/jpashop/JpashopApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/test/java/jpabook/jpashop/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/jpashop/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/MARKDOWN/SpringBean.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/AutoAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/MemberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/OrderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/SpringCoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/annotation/MainDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/discount/DiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/discount/FixDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/discount/RateDiscountPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/member/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/java/hello/spring_core/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/resources/appConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/SpringCoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/autowired/AllBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/autowired/AutowiredTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/discount/RateDiscountPolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/lifecycle/BeanLifeCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/lifecycle/NetworkClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/member/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/order/OrderServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/scan/filter/BeanA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/scan/filter/BeanB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/scan/filter/ComponentFilterAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/scan/filter/MyExcludeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/scan/filter/MyIncludeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/singleton/ConfigurationSingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/singleton/SingletonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/singleton/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/singleton/StatefulService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/singleton/StatefulServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/test/AutoAppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_core/src/test/java/hello/spring_core/xml/XmlAppContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/MARKDOWN/AOP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/MARKDOWN/DI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/MARKDOWN/JPA.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/MARKDOWN/springMVC.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/MARKDOWN/스프링 웹 개발 기초.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/image/img9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/SpringIntroductionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/aop/TimeTraceAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/JdbcMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/JdbcTemplateMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/JpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/repository/SpringDataJpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/java/hello/spring_introduction/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/static/hello-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/test/java/hello/spring_introduction/SpringIntroductionApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/test/java/hello/spring_introduction/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/test/java/hello/spring_introduction/service/MemberServiceIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/spring_introduction/src/test/java/hello/spring_introduction/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/img/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_01/AmericaTIre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_01/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_01/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_01/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_01/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_02/AmericaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_02/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_02/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_02/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_02/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_03/AmericaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_03/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_03/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_03/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert001_03/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert002/AmericaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert002/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert002/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert002/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert002/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert003/AmericaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert003/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert003/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert003/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert003/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert004/AmericaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert004/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert004/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert004/KoreaTire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/expert004/Tire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/java/hello/hellospring/HelloSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/resources/expert002/expert002.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/resources/expert003/expert003.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/main/resources/expert004/expert004.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert001_01/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert001_02/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert001_03/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert002/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert003/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/expert004/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssssujini99/스프링 입문을 위한 자바 객체 지향의 원리와 이해(책)/IoC&amp;DI/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/HelloSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/aop/TimeTraceAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/JdbcMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/JdbcTemplateMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/JpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/repository/SpringDataJpaMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/java/GDSC/Hongik/hellospring/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/static/hello-static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/templates/hello-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/main/resources/templates/members/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/test/java/GDSC/Hongik/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/test/java/GDSC/Hongik/hellospring/repository/MemoryMemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/test/java/GDSC/Hongik/hellospring/service/MemberServiceIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 입문/src/test/java/GDSC/Hongik/hellospring/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/스프링 핵심 기본편/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwoobeat/자바 객체지향의 원리와 이해/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jjddhh/스프링 핵심 원리 - 기본편/JDK Dynamic Proxy, CGLIB.md" beforeDir="false" afterPath="$PROJECT_DIR$/jjddhh/스프링 핵심 원리 - 기본편/JDK Dynamic Proxy, CGLIB.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,29 +929,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/GDSC-1st-Backend-Study",
-    "nodejs_package_manager_path": "npm"
-  }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="GDSC-1st-Backend-Study" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="GDSC-1st-Backend-Study" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,139 +945,7 @@
       <updated>1668069686395</updated>
       <workItem from="1668069688910" duration="145000" />
       <workItem from="1668076331138" duration="1091000" />
-      <workItem from="1668430439728" duration="7452000" />
-      <workItem from="1668506512154" duration="889000" />
-      <workItem from="1668507480636" duration="24000" />
-      <workItem from="1668507512408" duration="19000" />
-      <workItem from="1668507537202" duration="7441000" />
     </task>
-    <task id="LOCAL-00001" summary="[Docs] 001. 사람을 사랑한 기술">
-      <created>1668433336779</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433336779</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[Docs] 002. 자바와 절차적,구조적 프로그래밍">
-      <created>1668433352632</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433352632</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[Docs] 001. 사람을 사랑한 기술">
-      <created>1668433435564</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433435564</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[Docs] 002. 자바와 절차적,구조적 프로그래밍">
-      <created>1668433445099</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433445099</updated>
-    </task>
-    <task id="LOCAL-00005" summary="[Docs] 003. 자바와 객체 지향">
-      <created>1668433454343</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433454343</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[Docs] 004. 자바가 확장한 객체 지향">
-      <created>1668433475712</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433475712</updated>
-    </task>
-    <task id="LOCAL-00007" summary="[Docs] 005. 객체 지향 설계 5원칙 - SOLID">
-      <created>1668433483249</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433483249</updated>
-    </task>
-    <task id="LOCAL-00008" summary="[Docs] 006. 스프링이 사랑한 Design Pattern">
-      <created>1668433493220</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433493220</updated>
-    </task>
-    <task id="LOCAL-00009" summary="[Docs] 007. 스프링 삼각형과 설정 정보">
-      <created>1668433524084</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433524084</updated>
-    </task>
-    <task id="LOCAL-00010" summary="[Docs] JDK Dynamic Proxy, CGLIB">
-      <created>1668433539601</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433539601</updated>
-    </task>
-    <task id="LOCAL-00011" summary="[Docs] 연관관계 편의 메서드">
-      <created>1668433575506</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433575506</updated>
-    </task>
-    <task id="LOCAL-00012" summary="[Docs] 스프링 입문 책">
-      <created>1668433601202</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433601202</updated>
-    </task>
-    <task id="LOCAL-00013" summary="[Docs] 스프링 입문 책">
-      <created>1668433664081</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433664081</updated>
-    </task>
-    <task id="LOCAL-00014" summary="[Docs] 스프링 입문">
-      <created>1668433669042</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433669042</updated>
-    </task>
-    <task id="LOCAL-00015" summary="[Docs] 스프링 핵심 원리 - 기본편">
-      <created>1668433680205</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433680205</updated>
-    </task>
-    <task id="LOCAL-00016" summary="[Chore] README.md 추가">
-      <created>1668433815514</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433815514</updated>
-    </task>
-    <task id="LOCAL-00017" summary="[Chore] README.md 추가">
-      <created>1668433953139</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1668433953139</updated>
-    </task>
-    <task id="LOCAL-00018" summary="📝 Update(README.md): 파일 복원">
-      <created>1668434019605</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1668434019605</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,22 +961,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Docs] 001. 사람을 사랑한 기술" />
-    <MESSAGE value="[Docs] 002. 자바와 절차적,구조적 프로그래밍" />
-    <MESSAGE value="[Docs] 003. 자바와 객체 지향" />
-    <MESSAGE value="[Docs] 004. 자바가 확장한 객체 지향" />
-    <MESSAGE value="[Docs] 005. 객체 지향 설계 5원칙 - SOLID" />
-    <MESSAGE value="[Docs] 006. 스프링이 사랑한 Design Pattern" />
-    <MESSAGE value="[Docs] 007. 스프링 삼각형과 설정 정보" />
-    <MESSAGE value="[Docs] JDK Dynamic Proxy, CGLIB" />
-    <MESSAGE value="[Docs] 연관관계 편의 메서드" />
-    <MESSAGE value="[Docs] 스프링 입문 책" />
-    <MESSAGE value="[Docs] 스프링 입문" />
-    <MESSAGE value="[Docs] 스프링 핵심 원리 - 기본편" />
-    <MESSAGE value="[Chore] README.md 추가" />
-    <MESSAGE value=" Update(README.md): 파일 복원" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Update(README.md): 파일 복원" />
   </component>
 </project>
