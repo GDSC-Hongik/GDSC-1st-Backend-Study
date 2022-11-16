@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : image 위치 조정">
-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/autoincrement.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차/분산형DB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : 5주차 스터디" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +65,7 @@
       <workItem from="1667395988405" duration="733000" />
       <workItem from="1667902495214" duration="12000" />
       <workItem from="1668045497418" duration="756000" />
-      <workItem from="1668052601058" duration="8095000" />
+      <workItem from="1668052601058" duration="8279000" />
     </task>
     <task id="LOCAL-00001" summary="깃 연결 테스트 커밋">
       <created>1664469948879</created>
@@ -99,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667396115857</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Docs : 5주차 스터디">
+      <created>1668067256951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668067256951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +123,7 @@
     <MESSAGE value="깃 연결 테스트 커밋" />
     <MESSAGE value=".idea 제거" />
     <MESSAGE value="Docs : image 위치 조정" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docs : image 위치 조정" />
+    <MESSAGE value="Docs : 5주차 스터디" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docs : 5주차 스터디" />
   </component>
 </project>
