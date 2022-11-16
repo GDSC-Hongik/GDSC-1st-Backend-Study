@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : 5주차 스터디" />
+    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : 5주차 스터디">
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/6주차 스터디 - 11.16(수).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Consumer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Direct Graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/H사 적용 사례.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/NiFi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Processor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차" />
       <recent name="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차" />
     </key>
   </component>
@@ -66,6 +75,7 @@
       <workItem from="1667902495214" duration="12000" />
       <workItem from="1668045497418" duration="756000" />
       <workItem from="1668052601058" duration="8279000" />
+      <workItem from="1668599345146" duration="4812000" />
     </task>
     <task id="LOCAL-00001" summary="깃 연결 테스트 커밋">
       <created>1664469948879</created>
