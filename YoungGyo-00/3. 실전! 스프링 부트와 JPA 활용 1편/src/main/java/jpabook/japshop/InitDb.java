@@ -3,10 +3,10 @@ package jpabook.japshop;
 import jpabook.japshop.domain.*;
 import jpabook.japshop.domain.item.Book;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 
 @Component
@@ -14,11 +14,16 @@ import javax.persistence.EntityManager;
 public class InitDb {
     private final InitService initService;
 
+    @PostConstruct
+    public void init() {
+        initService.dbInit1();
+        initService.dbInit2();
+    }
 
     @Component
     @Transactional
     @RequiredArgsConstructor
-    public class InitService {
+    static class InitService {
         private final EntityManager em;
 
         public void dbInit1() {
@@ -55,26 +60,26 @@ public class InitDb {
 
             em.persist(order);
         }
-    }
 
-    private Member createMember(String name, String city, String street, String zipcode) {
-        Member member = new Member();
-        member.setName(name);
-        member.setAddress(new Address(city, street, zipcode));
-        return member;
-    }
+        private Member createMember(String name, String city, String street, String zipcode) {
+            Member member = new Member();
+            member.setName(name);
+            member.setAddress(new Address(city, street, zipcode));
+            return member;
+        }
 
-    private Book createBook(String name, int price, int stockQuantity) {
-        Book book = new Book();
-        book.setName(name);
-        book.setPrice(price);
-        book.setStockQuantity(stockQuantity);
-        return book;
-    }
+        private Book createBook(String name, int price, int stockQuantity) {
+            Book book = new Book();
+            book.setName(name);
+            book.setPrice(price);
+            book.setStockQuantity(stockQuantity);
+            return book;
+        }
 
-    private Delivery createDelivery(Member member) {
-        Delivery delivery = new Delivery();
-        delivery.setAddress(member.getAddress());
-        return delivery;
+        private Delivery createDelivery(Member member) {
+            Delivery delivery = new Delivery();
+            delivery.setAddress(member.getAddress());
+            return delivery;
+        }
     }
 }
