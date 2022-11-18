@@ -15,3 +15,13 @@
 6. [주문 도메인 개발](https://silent-apparatus-578.notion.site/bbd11831a6274bffb404efafd40d35ba)
 
 7. [웹 계층 개발](https://silent-apparatus-578.notion.site/59c5609f20db4c3cb898cda118c5c104)
+
+[도메인 분석 설계]
+- ERD
+![image](https://user-images.githubusercontent.com/83302344/202751506-e6877e12-d66a-4137-85b7-d8d85214e4bb.png)
+
+- Schema
+![image](https://user-images.githubusercontent.com/83302344/202751623-767ba19c-db98-48b4-800b-c2cd103e426d.png)
+
+- ERD + Schema
+![image](https://user-images.githubusercontent.com/83302344/202752176-9856d75b-5677-44db-8d9f-aeee3b994f9d.png)
