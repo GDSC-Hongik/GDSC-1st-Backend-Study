@@ -18,10 +18,17 @@
 
 [도메인 분석 설계]
 - ERD
-![image](https://user-images.githubusercontent.com/83302344/202751506-e6877e12-d66a-4137-85b7-d8d85214e4bb.png)
+
+<img src="https://user-images.githubusercontent.com/83302344/202751506-e6877e12-d66a-4137-85b7-d8d85214e4bb.png"  width="700"/>
 
 - Schema
-![image](https://user-images.githubusercontent.com/83302344/202751623-767ba19c-db98-48b4-800b-c2cd103e426d.png)
 
-- ERD + Schema
-![image](https://user-images.githubusercontent.com/83302344/202752176-9856d75b-5677-44db-8d9f-aeee3b994f9d.png)
+<img src="https://user-images.githubusercontent.com/83302344/202751623-767ba19c-db98-48b4-800b-c2cd103e426d.png"  width="700"/>
+
+- ERD + Schema -> DB 구조
+
+<img src="https://user-images.githubusercontent.com/83302344/202752176-9856d75b-5677-44db-8d9f-aeee3b994f9d.png"  width="700"/>
+
+- Entity
+
+<img src="https://user-images.githubusercontent.com/83302344/202925795-b3335bbc-fdd4-49fd-bdfa-d87706b8d71c.png"  width="700"/>
