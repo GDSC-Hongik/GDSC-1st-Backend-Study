@@ -11,6 +11,8 @@ import lombok.Setter;
 
 import javax.persistence.*; // Entity, Id, GeneratedValue, Column
 
+import static javax.persistence.FetchType.*;
+
 @Entity
 @Getter @Setter
 public class OrderItem {
@@ -19,11 +21,11 @@ public class OrderItem {
     @Column(name = "order_item_id")
     private Long id; // 주문상품id(PK)
 
-    @ManyToOne // [주문상품-상품 n:1]관계의 주인
+    @ManyToOne(fetch = LAZY) // [주문상품-상품 n:1]관계의 주인
     @JoinColumn(name="item_id") // 상품id(FK). 상품의 item_id 필드에 매핑
     private Item item; // 상품 (상품id로 조인한 주문)
 
-    @ManyToOne // [주문-주문상품 1:n]관계의 주인
+    @ManyToOne(fetch = LAZY) // [주문-주문상품 1:n]관계의 주인
     @JoinColumn(name="order_id") // 주문id(FK). 주문의 order_id 필드에 매핑
     private Order order; // 주문 (주문id로 조인한 주문)
 

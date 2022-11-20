@@ -13,6 +13,8 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.persistence.FetchType.*;
+
 @Entity
 @Getter @Setter
 public class Category {
@@ -32,7 +34,7 @@ public class Category {
     private List<Item> items = new ArrayList<>(); // 상품 list (중간테이블로 조인한 상품들)
 
     // 자식 카테고리
-    @ManyToOne // [부모-자식 1:n]관계의 주인
+    @ManyToOne(fetch = LAZY) // [부모-자식 1:n]관계의 주인
     @JoinColumn(name = "parent_id") // 부모id(FK). 부모의 parent_id 필드에 매핑
     private Category parent; // 부모 (부모id로 조인한 부모)
 

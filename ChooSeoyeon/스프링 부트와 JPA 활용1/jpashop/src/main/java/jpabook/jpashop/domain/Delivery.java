@@ -10,6 +10,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+import static javax.persistence.FetchType.*;
+
 @Entity
 @Getter @Setter
 public class Delivery {
@@ -18,7 +20,7 @@ public class Delivery {
     @Column(name="delivery_id")
     private Long id; // 배송id(PK)
 
-    @OneToOne(mappedBy = "delivery") // [주문-배송 1:1]관계의 주인 아님. 주문의 delivery 필드에 매핑된 거울일 뿐.
+    @OneToOne(mappedBy = "delivery", fetch = LAZY) // [주문-배송 1:1]관계의 주인 아님. 주문의 delivery 필드에 매핑된 거울일 뿐.
     private Order order; // 주문 (배송id로 해당 배송과 조인한 주문)
 
     @Embedded
