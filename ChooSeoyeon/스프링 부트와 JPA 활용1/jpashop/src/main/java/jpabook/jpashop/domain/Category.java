@@ -42,4 +42,9 @@ public class Category {
     @OneToMany(mappedBy = "parent") // [부모-자식 1:n]관계의 주인 아님
     private List<Category> child = new ArrayList<>(); // 자식 list (부모id로 해당 부모 조인한 자식들)
 
+    //==연관관계 메서드==//
+    public void addChildCategory(Category child) {
+        this.child.add(child);
+        child.setParent(this);
+    }
 }
