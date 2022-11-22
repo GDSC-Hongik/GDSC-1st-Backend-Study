@@ -2,6 +2,8 @@
 
 package jpabook.jpashop;
 
+import jpabook.jpashop.practice.Member1;
+import jpabook.jpashop.practice.MemberRepository1;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
