@@ -3,20 +3,31 @@
 package jpabook.jpashop.repository;
 
 import jpabook.jpashop.domain.Member;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository // 스프링이 제공. Component scan에 의해 자동으로 스프링 빈으로 관리됨
+@RequiredArgsConstructor
 public class MemberRepository {
-    @PersistenceContext // JPA가 제공.
-    private EntityManager em; // 스프링이 JPA의 EntityManager 만들어서 주입해줌
+
+    //@PersistenceContext // JPA가 제공.
+    private final EntityManager em; // 스프링이 JPA의 EntityManager 만들어서 주입해줌
+
+//    public MemberRepository(EntityManager em) {
+//        this.em = em;
+//    }
 
     // 저장
     public void save(Member member) {
-        em.persist(member); // JPA가 회원 저장함
+        em.persist(member); // JPA가 회원 저장함.
+        // 영속성 컨텍스트에 member 객체 올림.
+        // 영속성 컨텍스트는 key, value가 있음.
+        // PK(id)가 key가 됨
+        // 동시에 member 객체의 id 값도 채워줌
+        // 아직 DB에 들어간 시점이 아니라도 그렇게 해줌
     }
 
     // 조회
