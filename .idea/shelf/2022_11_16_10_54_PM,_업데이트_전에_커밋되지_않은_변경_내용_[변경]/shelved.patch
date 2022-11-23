@@ -1,0 +1,62 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b948a6e7-0344-4317-a3bb-107f5b44d278\" name=\"변경\" comment=\"Docs : 5주차 스터디\">\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/6주차 스터디 - 11.16(수).md\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Consumer.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Direct Graph.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/H사 적용 사례.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/NiFi.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Processor.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"ImNM\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2FRzdENdwBuMw4nwBy3pM21Ehlr\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"Git.Branch.Popup.ShowAllRemotes\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"project.structure.last.edited\" value=\"프로젝트\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차\" />\n      <recent name=\"$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/5주차\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"애플리케이션 수준\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\n      <changelist id=\"b948a6e7-0344-4317-a3bb-107f5b44d278\" name=\"변경\" comment=\"\" />\n      <created>1664469770713</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664469770713</updated>\n      <workItem from=\"1664469772490\" duration=\"434000\" />\n      <workItem from=\"1664470209158\" duration=\"39000\" />\n      <workItem from=\"1664470269156\" duration=\"173000\" />\n      <workItem from=\"1667307994842\" duration=\"50000\" />\n      <workItem from=\"1667395988405\" duration=\"733000\" />\n      <workItem from=\"1667902495214\" duration=\"12000\" />\n      <workItem from=\"1668045497418\" duration=\"756000\" />\n      <workItem from=\"1668052601058\" duration=\"8279000\" />\n      <workItem from=\"1668599345146\" duration=\"4812000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"깃 연결 테스트 커밋\">\n      <created>1664469948879</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664469948879</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\".idea 제거\">\n      <created>1664470040578</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664470040578</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Docs : image 위치 조정\">\n      <created>1667396038738</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1667396038738</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Docs : image 위치 조정\">\n      <created>1667396115857</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1667396115857</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Docs : 5주차 스터디\">\n      <created>1668067256951</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1668067256951</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"깃 연결 테스트 커밋\" />\n    <MESSAGE value=\".idea 제거\" />\n    <MESSAGE value=\"Docs : image 위치 조정\" />\n    <MESSAGE value=\"Docs : 5주차 스터디\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Docs : 5주차 스터디\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,14 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : 5주차 스터디">
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/6주차 스터디 - 11.16(수).md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Consumer.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Direct Graph.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/H사 적용 사례.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/NiFi.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/img/6주차/Processor.png" afterDir="false" />
++    <list default="true" id="b948a6e7-0344-4317-a3bb-107f5b44d278" name="변경" comment="Docs : 6주차 스터디">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/6주차 스터디 - 11.16(수).md" beforeDir="false" afterPath="$PROJECT_DIR$/YoungGyo-00/[서적]_스프링_입문을_위한_자바_객체_지향의_원리와_이해/6주차 스터디 - 11.16(수).md" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -75,7 +70,9 @@
+       <workItem from="1667902495214" duration="12000" />
+       <workItem from="1668045497418" duration="756000" />
+       <workItem from="1668052601058" duration="8279000" />
+-      <workItem from="1668599345146" duration="4812000" />
++      <workItem from="1668599345146" duration="5347000" />
++      <workItem from="1668605420479" duration="75000" />
++      <workItem from="1668606551538" duration="59000" />
+     </task>
+     <task id="LOCAL-00001" summary="깃 연결 테스트 커밋">
+       <created>1664469948879</created>
+@@ -112,7 +109,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1668067256951</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Docs : 6주차 스터디">
++      <created>1668604978973</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1668604978973</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -134,6 +138,7 @@
+     <MESSAGE value=".idea 제거" />
+     <MESSAGE value="Docs : image 위치 조정" />
+     <MESSAGE value="Docs : 5주차 스터디" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Docs : 5주차 스터디" />
++    <MESSAGE value="Docs : 6주차 스터디" />
++    <option name="LAST_COMMIT_MESSAGE" value="Docs : 6주차 스터디" />
+   </component>
+ </project>
+\ No newline at end of file
