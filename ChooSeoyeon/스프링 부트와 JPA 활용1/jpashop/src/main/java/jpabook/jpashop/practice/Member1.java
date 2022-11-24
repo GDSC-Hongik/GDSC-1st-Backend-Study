@@ -1,6 +1,6 @@
 // 1. 프로젝트 환경설정 - 5) JPA와 DB 설정, 동작확인 - 회원 엔티티
 
-package jpabook.jpashop;
+package jpabook.jpashop.practice;
 
 import lombok.Getter;
 import lombok.Setter;
